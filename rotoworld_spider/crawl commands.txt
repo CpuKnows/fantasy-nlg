@@ -1,0 +1,5 @@
+scrapy crawl player_spider -a player_links_file="player_links.json" --set FEED_URI="player_news.json" --set FEED_FORMAT="jsonlines"
+
+scrapy crawl roster_spider --set FEED_URI="scraped_data/player_links.json" --set FEED_FORMAT="jsonlines"
+
+scrapy crawl stats_spider -a player_links_file="player_links.json" --set FEED_URI="player_stats.json" --set FEED_FORMAT="jsonlines"
