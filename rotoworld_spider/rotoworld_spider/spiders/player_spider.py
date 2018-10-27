@@ -24,6 +24,23 @@ class PlayerSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+        top_story = response.xpath('//div[@class="pp"]')
+        loader = ItemLoader(PlayerNews(), top_story)
+        loader.add_value('url', response.url)
+        loader.add_xpath('player', './div[@class="playerdetails"]/div[@class="playername"]/h1/text()')
+        loader.add_xpath('position', './div[@class="playerdetails"]/div[@class="playername"]/h1/text()')
+        loader.add_xpath('team', './div[@class="playerdetails"]/div[@class="playername"]/' +
+                         'table[@id="cp1_ctl00_tblPlayerDetails"]/tr/td[2]/a/text()')
+
+        blurb = loader.nested_xpath('./div[@class="playernews"]')
+        blurb.add_xpath('report', './div[@class="report"]/text()')
+        blurb.add_xpath('impact', './div[@class="impact"]/text()')
+        blurb.add_xpath('source_link', './div[@class="info"]/div[@class="source"]/a/@href')
+        blurb.add_xpath('source_text', './div[@class="info"]/div[@class="source"]/a/text()')
+        blurb.add_xpath('date', './div[@class="impact"]/span[@class="date"]/text()')
+
+        yield loader.load_item()
+
         for news in response.xpath('//div[@class="pb"]'):
             loader = ItemLoader(PlayerNews(), news)
             loader.add_value('url', response.url)

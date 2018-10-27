@@ -29,6 +29,20 @@ def strip_header_position(text):
     return text[:idx].strip()
 
 
+def flexible_strip_name(text):
+    if '|' in text:
+        return strip_header_name(text)
+    else:
+        return strip_spaces(text)
+
+
+def flexible_strip_position(text):
+    if '|' in text:
+        return strip_header_position(text)
+    else:
+        return strip_position(text)
+
+
 def header_map_position(text):
     if text == 'Quarterback':
         return 'QB'
@@ -57,12 +71,14 @@ def to_float(text):
 class PlayerLink(scrapy.Item):
     player_name = scrapy.Field(output_processor=TakeFirst())
     player_link = scrapy.Field(output_processor=TakeFirst())
+    player_position = scrapy.Field(output_processor=TakeFirst())
 
 
 class PlayerNews(scrapy.Item):
     url = scrapy.Field(output_processor=TakeFirst())
-    player = scrapy.Field(input_processor=MapCompose(strip_spaces), output_processor=TakeFirst())
-    position = scrapy.Field(input_processor=MapCompose(strip_position), output_processor=TakeFirst())
+    player = scrapy.Field(input_processor=MapCompose(flexible_strip_name), output_processor=TakeFirst())
+    position = scrapy.Field(input_processor=MapCompose(flexible_strip_position, header_map_position),
+                            output_processor=TakeFirst())
     team = scrapy.Field(input_processor=MapCompose(strip_spaces), output_processor=TakeFirst())
     report = scrapy.Field(input_processor=MapCompose(strip_spaces), output_processor=TakeFirst())
     impact = scrapy.Field(input_processor=MapCompose(strip_spaces), output_processor=TakeFirst())
