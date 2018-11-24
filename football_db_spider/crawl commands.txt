@@ -1,0 +1,1 @@
+scrapy crawl football_db_stats_spider --set FEED_URI="football_db_player_stats.json" --set FEED_FORMAT="jsonlines"
