@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import re
 
-filepath = "C:/Users/vaibh/Source/Repos/fantasy-nlg/analysis/data/output_chunked.csv"
+filepath = "../../data/output_chunked.csv"
 
 # Workaround to load variable length rows using pandas (missing values will be
 # NaN)
