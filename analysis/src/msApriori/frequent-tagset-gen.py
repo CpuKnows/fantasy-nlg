@@ -11,6 +11,15 @@ filepath = "../../data/output_chunked.csv"
 my_cols = ["A", "B", "C", "D", "E", "F", "G"]
 df = pd.read_csv(filepath, encoding = "ISO-8859-1", names=my_cols)
 
+tagChunksDict = {}  # Stores chunks that the tags belong
+def addTagToChunkDict(tag, chunk):
+    if tag in tagChunksDict:
+        # Check if this chunk already added
+        if chunk not in tagChunksDict[tag]:
+            tagChunksDict[tag].append(chunk)
+    else:
+        tagChunksDict[tag] = [chunk]
+
 tagIdDict = {}
 inverseTagIdDict = {}  # Used for lookup for resolving later
 bucket = []
@@ -24,6 +33,7 @@ for i in range(len(df)):
         tags = rgx.findall(chunk)
         if len(tags) > 0:
             tag = ''.join(tags)
+            addTagToChunkDict(tag, chunk)
             if tag in tagIdDict:
                 tagId = tagIdDict[tag]
             else:
@@ -52,17 +62,25 @@ def resolveFks(Fks):
                 Fks[i][j][k] = inverseTagIdDict[Fks[i][j][k]]
 
 def printFrequentkItemsets(Fks, item_counts, file):
-    for n, Fk in enumerate(Fks):
+    for j, Fk in enumerate(Fks):
         if len(Fk) == 0: continue
 
         k = len(Fk[0])
         file.write("\nFrequent %d-tagsets\n" % k)
         counter = 0
         for i, itemset in enumerate(Fk):
-            file.write("%d : %s\n" % (item_counts[n][i], itemset))
+            file.write("%d : %s\n" % (item_counts[j][i], itemset))
             counter += 1
 
     file.write("\nTotal no. of frequent-%d tagsets = %d\n" % (k, counter))
+
+def printTagChunks(tagChunksDict, file):
+    file.write("\nPrinting tag-chunks dictionary..\n")
+    for key in tagChunksDict.keys():
+        file.write("\n" + key + ": \n")
+        file.write("----------------\n")
+        for val in tagChunksDict[key]:
+            file.write(val + "\n")
 
 minsup = 0.4
 Fks, item_counts = MSapriori(bucket, minsup)
@@ -72,6 +90,7 @@ file.write("Generating frequent tagsets for minsup: % 0.2f" % minsup)
 printFrequentkItemsets(Fks, item_counts, file)
 resolveFks(Fks)
 printFrequentkItemsets(Fks, item_counts, file)
+printTagChunks(tagChunksDict, file)
 file.close()
 
 
