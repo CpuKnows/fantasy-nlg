@@ -1,0 +1,50 @@
+Generating frequent tagsets for minsup:  0.40
+Frequent 1-tagsets
+727 : [2]
+918 : [3]
+1155 : [4]
+1031 : [5]
+
+Frequent 2-tagsets
+643 : [2, 3]
+697 : [2, 4]
+591 : [2, 5]
+875 : [3, 4]
+743 : [3, 5]
+959 : [4, 5]
+
+Frequent 3-tagsets
+622 : [2, 3, 4]
+517 : [2, 3, 5]
+565 : [2, 4, 5]
+706 : [3, 4, 5]
+
+Frequent 4-tagsets
+498 : [2, 3, 4, 5]
+
+Total no. of frequent-4 tagsets = 1
+
+Frequent 1-tagsets
+727 : ['${temp_var_1}${receptions}']
+918 : ['${pass_yards}${temp_var_1}${rush_yards}']
+1155 : ['${pass_td}${pass_int}${rush_yards}']
+1031 : ['${team}${player_position}${player_name}${pass_completions}']
+
+Frequent 2-tagsets
+643 : ['${temp_var_1}${receptions}', '${pass_yards}${temp_var_1}${rush_yards}']
+697 : ['${temp_var_1}${receptions}', '${pass_td}${pass_int}${rush_yards}']
+591 : ['${temp_var_1}${receptions}', '${team}${player_position}${player_name}${pass_completions}']
+875 : ['${pass_yards}${temp_var_1}${rush_yards}', '${pass_td}${pass_int}${rush_yards}']
+743 : ['${pass_yards}${temp_var_1}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+959 : ['${pass_td}${pass_int}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+
+Frequent 3-tagsets
+622 : ['${temp_var_1}${receptions}', '${pass_yards}${temp_var_1}${rush_yards}', '${pass_td}${pass_int}${rush_yards}']
+517 : ['${temp_var_1}${receptions}', '${pass_yards}${temp_var_1}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+565 : ['${temp_var_1}${receptions}', '${pass_td}${pass_int}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+706 : ['${pass_yards}${temp_var_1}${rush_yards}', '${pass_td}${pass_int}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+
+Frequent 4-tagsets
+498 : ['${temp_var_1}${receptions}', '${pass_yards}${temp_var_1}${rush_yards}', '${pass_td}${pass_int}${rush_yards}', '${team}${player_position}${player_name}${pass_completions}']
+
+Total no. of frequent-4 tagsets = 1
