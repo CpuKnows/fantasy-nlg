@@ -46,13 +46,13 @@ def create_news_stats_dataset(news_file, stats_file, output_file=None):
 
     # Put all player stats and the corresponding news article in one row
     news_stats_df = fbdb_stats.drop(columns=['url', 'team', 'pass_lg', 'rush_lg', 'rec_lg', 'rush_fd', 'rec_fd'])
-    news_stats_df['week_period'] = news_stats_df ['date'].dt.to_period('W-WED')
-    news_stats_df['game_dow'] = news_stats_df ['date'].dt.day_name()
-    news_stats_df['date'] = news_stats_df ['date'].dt.date
-    news_stats_df['opp'] = news_stats_df ['opp'].str.upper()
-    news_stats_df['opp'] = news_stats_df ['opp'].replace('LA', 'LAR')
-    news_stats_df = pd.merge(news_stats_df , nfl_week, how='left', on='week_period')
-    news_stats_df['week'] = news_stats_df ['week'].astype(int)
+    news_stats_df['week_period'] = news_stats_df['date'].dt.to_period('W-WED')
+    news_stats_df['game_dow'] = news_stats_df['date'].dt.day_name()
+    news_stats_df['date'] = news_stats_df['date'].dt.date
+    news_stats_df['opp'] = news_stats_df['opp'].str.upper()
+    news_stats_df['opp'] = news_stats_df['opp'].replace('LA', 'LAR')
+    news_stats_df = pd.merge(news_stats_df, nfl_week, how='left', on='week_period')
+    news_stats_df['week'] = news_stats_df['week'].astype(int)
     news_stats_df = news_stats_df .drop(columns=['week_period'])
 
     temp_df = news.drop(columns=['player_id'])
@@ -74,10 +74,13 @@ def create_inverted_news_dict(news_dict, data_cols, team_id_dict, id_team_dict):
             k, v = str(k), str(v)
 
             if k in ['team', 'opp']:
-                team_id = team_id_dict[v]
-                team_surface_forms = id_team_dict[team_id]
-                for team in team_surface_forms:
-                    inverted_news_dict[team] = k
+                try:
+                    team_id = team_id_dict[v]
+                    team_surface_forms = id_team_dict[team_id]
+                    for team in team_surface_forms:
+                        inverted_news_dict[team] = k
+                except KeyError:
+                    inverted_news_dict['Free Agent'] = k
             elif v not in inverted_news_dict:
                 inverted_news_dict[v] = k
             elif type(inverted_news_dict[v]) is list:

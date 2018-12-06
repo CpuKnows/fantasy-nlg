@@ -7,9 +7,10 @@ import pandas as pd
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('input_path', help='Football DB scraped json input',
+    parser.add_argument('input_path', help='Football DB scraped json input', nargs='?', const=1,
                         default='../../football_db_spider/scraped_data/football_db_player_stats.json')
-    parser.add_argument('output_path', help='csv output file', default='../data/football_db_player_stats.csv')
+    parser.add_argument('output_path', help='csv output file',  nargs='?', const=1,
+                        default='../data/football_db_player_stats.csv')
     args = parser.parse_args()
 
     # Load scraped player stats from json file
