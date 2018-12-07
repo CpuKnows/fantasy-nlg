@@ -25,6 +25,7 @@ inverseTagIdDict = {}  # Used for lookup for resolving later
 bucket = []
 rgx = re.compile('\${.*?}')
 tagId = 0
+lastTagId = 0
 for i in range(len(df)):
     currentBucket = []
     for col in my_cols:
@@ -37,7 +38,8 @@ for i in range(len(df)):
             if tag in tagIdDict:
                 tagId = tagIdDict[tag]
             else:
-                tagId += 1
+                lastTagId += 1
+                tagId = lastTagId
                 tagIdDict[tag] = tagId
                 inverseTagIdDict[tagId] = tag
             currentBucket.append(tagId)
@@ -82,7 +84,7 @@ def printTagChunks(tagChunksDict, file):
         for val in tagChunksDict[key]:
             file.write(val + "\n")
 
-minsup = 0.4
+minsup = 0.05
 Fks, item_counts = MSapriori(bucket, minsup)
 
 file = openResultFile()
