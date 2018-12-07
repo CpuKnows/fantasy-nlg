@@ -29,7 +29,7 @@ class PlayerSpider(scrapy.Spider):
         loader.add_value('url', response.url)
         loader.add_xpath('player', './div[@class="playerdetails"]/div[@class="playername"]/h1/text()')
         loader.add_xpath('position', './div[@class="playerdetails"]/div[@class="playername"]/h1/text()')
-        loader.add_xpath('team', './div[@class="playerdetails"]/div[@class="playername"]/' +
+        loader.add_xpath('team', './div[@class="playerdetails"]/' +
                          'table[@id="cp1_ctl00_tblPlayerDetails"]/tr/td[2]/a/text()')
 
         blurb = loader.nested_xpath('./div[@class="playernews"]')
