@@ -89,5 +89,6 @@ def load_spacy_model(team_file, players_file):
     component = NFLPlayerRecognizer(nlp, player_list)
     nlp.add_pipe(component, last=True)
     Token.set_extension('template_tag', default=None)
+    Span.set_extension('record_type', default=None)
 
     return nlp

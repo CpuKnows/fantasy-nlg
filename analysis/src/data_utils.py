@@ -58,10 +58,14 @@ def create_news_stats_dataset(news_file, stats_file, output_file=None):
     temp_df = news.drop(columns=['player_id'])
     temp_df = temp_df.rename(index=str, columns={'player': 'player_name', 'position': 'player_position'})
     temp_df['date'] = pd.to_datetime(temp_df['date']).dt.date
-    full_df = pd.merge(news_stats_df, temp_df, on=['player_name', 'player_position', 'date'])
+    news_stats_df = pd.merge(news_stats_df, temp_df, on=['player_name', 'player_position', 'date'])
 
-    full_df.to_csv(output_file, index=False)
-    return full_df
+    non_game_regex = r'active|questionable|exited|injury|ruled out|will start|ESPN|Twitter|expect|report|NFL Network|' \
+                     r'said'
+    news_stats_df = news_stats_df.loc[lambda df: ~df['report'].str.contains(non_game_regex, case=False, regex=True)]
+
+    news_stats_df.to_csv(output_file, index=False)
+    return news_stats_df
 
 
 def create_inverted_news_dict(news_dict, data_cols, team_id_dict, id_team_dict):
