@@ -136,7 +136,7 @@ def MSapriori(T, MS):
     return frequentSets, itemCounts
 
 
-# Uncomment for testing
+## Uncomment for testing
 #T = [[20, 30, 80, 70, 50, 90],
 #    [20, 10, 80, 70],
 #    [10, 20, 80],

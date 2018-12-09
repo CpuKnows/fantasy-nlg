@@ -1,327 +1,65 @@
-Generating frequent tagsets for minsup:  0.05
+Generating frequent tagsets for minsup:  0.30
 Frequent 1-tagsets
-409 : [1]
-603 : [2]
-325 : [3]
-1107 : [4]
-577 : [7]
-274 : [9]
-116 : [12]
-236 : [14]
-530 : [16]
-156 : [17]
-99 : [19]
-194 : [24]
-196 : [25]
-66 : [26]
-69 : [31]
-110 : [33]
+956 : [1]
+1442 : [2]
+2570 : [4]
+1453 : [7]
+1220 : [13]
 
 Frequent 2-tagsets
-331 : [1, 2]
-108 : [1, 3]
-377 : [1, 4]
-223 : [1, 7]
-342 : [1, 16]
-165 : [2, 3]
-547 : [2, 4]
-331 : [2, 7]
-118 : [2, 9]
-102 : [2, 12]
-131 : [2, 14]
-442 : [2, 16]
-93 : [2, 19]
-68 : [2, 33]
-304 : [3, 4]
-110 : [3, 9]
-64 : [3, 14]
-127 : [3, 16]
-529 : [4, 7]
-245 : [4, 9]
-113 : [4, 12]
-199 : [4, 14]
-496 : [4, 16]
-104 : [4, 17]
-95 : [4, 19]
-179 : [4, 24]
-181 : [4, 25]
-62 : [4, 26]
-64 : [4, 31]
-109 : [4, 33]
-115 : [7, 9]
-80 : [7, 12]
-125 : [7, 14]
-299 : [7, 16]
-92 : [7, 17]
-89 : [7, 24]
-90 : [7, 25]
-107 : [9, 12]
-97 : [9, 16]
-88 : [12, 16]
-76 : [14, 16]
-107 : [14, 17]
-94 : [14, 19]
-75 : [16, 19]
-194 : [24, 25]
-64 : [24, 26]
-69 : [24, 31]
-66 : [25, 26]
-69 : [25, 31]
+867 : [1, 4]
+1301 : [2, 4]
+867 : [2, 7]
+1034 : [2, 13]
+867 : [4, 1]
+1301 : [4, 2]
+1332 : [4, 7]
+1121 : [4, 13]
+867 : [7, 2]
+1332 : [7, 4]
+1034 : [13, 2]
+1121 : [13, 4]
 
 Frequent 3-tagsets
-98 : [1, 2, 3]
-305 : [1, 2, 4]
-174 : [1, 2, 7]
-279 : [1, 2, 16]
-103 : [1, 3, 4]
-86 : [1, 3, 16]
-207 : [1, 4, 7]
-313 : [1, 4, 16]
-190 : [1, 7, 16]
-155 : [2, 3, 4]
-114 : [2, 3, 16]
-298 : [2, 4, 7]
-113 : [2, 4, 9]
-99 : [2, 4, 12]
-108 : [2, 4, 14]
-415 : [2, 4, 16]
-90 : [2, 4, 19]
-68 : [2, 4, 33]
-75 : [2, 7, 9]
-68 : [2, 7, 12]
-73 : [2, 7, 14]
-245 : [2, 7, 16]
-96 : [2, 9, 12]
-82 : [2, 9, 16]
-78 : [2, 12, 16]
-69 : [2, 14, 16]
-88 : [2, 14, 19]
-69 : [2, 16, 19]
-107 : [3, 4, 9]
-121 : [3, 4, 16]
-110 : [4, 7, 9]
-78 : [4, 7, 12]
-104 : [4, 7, 14]
-283 : [4, 7, 16]
-86 : [4, 7, 24]
-87 : [4, 7, 25]
-104 : [4, 9, 12]
-97 : [4, 9, 16]
-88 : [4, 12, 16]
-71 : [4, 14, 16]
-75 : [4, 14, 17]
-90 : [4, 14, 19]
-71 : [4, 16, 19]
-179 : [4, 24, 25]
-64 : [4, 24, 31]
-62 : [4, 25, 26]
-64 : [4, 25, 31]
-75 : [7, 9, 12]
-64 : [7, 9, 16]
-63 : [7, 14, 17]
-89 : [7, 24, 25]
-86 : [9, 12, 16]
-70 : [14, 16, 19]
-64 : [24, 25, 26]
-69 : [24, 25, 31]
+955 : [2, 4, 13]
+955 : [2, 13, 4]
+955 : [4, 2, 13]
+955 : [4, 13, 2]
+955 : [13, 2, 4]
+955 : [13, 4, 2]
 
-Frequent 4-tagsets
-94 : [1, 2, 3, 4]
-77 : [1, 2, 3, 16]
-159 : [1, 2, 4, 7]
-255 : [1, 2, 4, 16]
-153 : [1, 2, 7, 16]
-81 : [1, 3, 4, 16]
-174 : [1, 4, 7, 16]
-110 : [2, 3, 4, 16]
-72 : [2, 4, 7, 9]
-66 : [2, 4, 7, 12]
-230 : [2, 4, 7, 16]
-93 : [2, 4, 9, 12]
-82 : [2, 4, 9, 16]
-78 : [2, 4, 12, 16]
-66 : [2, 4, 14, 16]
-85 : [2, 4, 14, 19]
-66 : [2, 4, 16, 19]
-65 : [2, 7, 9, 12]
-77 : [2, 9, 12, 16]
-64 : [2, 14, 16, 19]
-73 : [4, 7, 9, 12]
-64 : [4, 7, 9, 16]
-86 : [4, 7, 24, 25]
-86 : [4, 9, 12, 16]
-66 : [4, 14, 16, 19]
-64 : [4, 24, 25, 31]
-
-Frequent 5-tagsets
-73 : [1, 2, 3, 4, 16]
-138 : [1, 2, 4, 7, 16]
-63 : [2, 4, 7, 9, 12]
-77 : [2, 4, 9, 12, 16]
-
-Total no. of frequent-5 tagsets = 4
+Total no. of frequent-3 tagsets = 6
 
 Frequent 1-tagsets
-409 : ['${player_name}${receptions}']
-603 : ['${rec_yards}']
-325 : ['${week}']
-1107 : ['${opp}']
-577 : ['${team}${week}']
-274 : ['${player_name}']
-116 : ['${receptions}']
-236 : ['${player_name}${rush_attempts}']
-530 : ['${rec_targets}']
-156 : ['${rush_yards}']
-99 : ['${rush_yards}${receptions}']
-194 : ['${player_name}${pass_completions}']
-196 : ['${pass_attempts}']
-66 : ['${pass_yards}']
-69 : ['${pass_yards}${pass_td}']
-110 : ['${game_dow}${week}']
+956 : ['${player_name}${receptions}']
+1442 : ['${rec_yards}']
+2570 : ['${opp}']
+1453 : ['${team}${week}']
+1220 : ['${rec_targets}']
 
 Frequent 2-tagsets
-331 : ['${player_name}${receptions}', '${rec_yards}']
-108 : ['${player_name}${receptions}', '${week}']
-377 : ['${player_name}${receptions}', '${opp}']
-223 : ['${player_name}${receptions}', '${team}${week}']
-342 : ['${player_name}${receptions}', '${rec_targets}']
-165 : ['${rec_yards}', '${week}']
-547 : ['${rec_yards}', '${opp}']
-331 : ['${rec_yards}', '${team}${week}']
-118 : ['${rec_yards}', '${player_name}']
-102 : ['${rec_yards}', '${receptions}']
-131 : ['${rec_yards}', '${player_name}${rush_attempts}']
-442 : ['${rec_yards}', '${rec_targets}']
-93 : ['${rec_yards}', '${rush_yards}${receptions}']
-68 : ['${rec_yards}', '${game_dow}${week}']
-304 : ['${week}', '${opp}']
-110 : ['${week}', '${player_name}']
-64 : ['${week}', '${player_name}${rush_attempts}']
-127 : ['${week}', '${rec_targets}']
-529 : ['${opp}', '${team}${week}']
-245 : ['${opp}', '${player_name}']
-113 : ['${opp}', '${receptions}']
-199 : ['${opp}', '${player_name}${rush_attempts}']
-496 : ['${opp}', '${rec_targets}']
-104 : ['${opp}', '${rush_yards}']
-95 : ['${opp}', '${rush_yards}${receptions}']
-179 : ['${opp}', '${player_name}${pass_completions}']
-181 : ['${opp}', '${pass_attempts}']
-62 : ['${opp}', '${pass_yards}']
-64 : ['${opp}', '${pass_yards}${pass_td}']
-109 : ['${opp}', '${game_dow}${week}']
-115 : ['${team}${week}', '${player_name}']
-80 : ['${team}${week}', '${receptions}']
-125 : ['${team}${week}', '${player_name}${rush_attempts}']
-299 : ['${team}${week}', '${rec_targets}']
-92 : ['${team}${week}', '${rush_yards}']
-89 : ['${team}${week}', '${player_name}${pass_completions}']
-90 : ['${team}${week}', '${pass_attempts}']
-107 : ['${player_name}', '${receptions}']
-97 : ['${player_name}', '${rec_targets}']
-88 : ['${receptions}', '${rec_targets}']
-76 : ['${player_name}${rush_attempts}', '${rec_targets}']
-107 : ['${player_name}${rush_attempts}', '${rush_yards}']
-94 : ['${player_name}${rush_attempts}', '${rush_yards}${receptions}']
-75 : ['${rec_targets}', '${rush_yards}${receptions}']
-194 : ['${player_name}${pass_completions}', '${pass_attempts}']
-64 : ['${player_name}${pass_completions}', '${pass_yards}']
-69 : ['${player_name}${pass_completions}', '${pass_yards}${pass_td}']
-66 : ['${pass_attempts}', '${pass_yards}']
-69 : ['${pass_attempts}', '${pass_yards}${pass_td}']
+867 : ['${player_name}${receptions}', '${opp}']
+1301 : ['${rec_yards}', '${opp}']
+867 : ['${rec_yards}', '${team}${week}']
+1034 : ['${rec_yards}', '${rec_targets}']
+867 : ['${opp}', '${player_name}${receptions}']
+1301 : ['${opp}', '${rec_yards}']
+1332 : ['${opp}', '${team}${week}']
+1121 : ['${opp}', '${rec_targets}']
+867 : ['${team}${week}', '${rec_yards}']
+1332 : ['${team}${week}', '${opp}']
+1034 : ['${rec_targets}', '${rec_yards}']
+1121 : ['${rec_targets}', '${opp}']
 
 Frequent 3-tagsets
-98 : ['${player_name}${receptions}', '${rec_yards}', '${week}']
-305 : ['${player_name}${receptions}', '${rec_yards}', '${opp}']
-174 : ['${player_name}${receptions}', '${rec_yards}', '${team}${week}']
-279 : ['${player_name}${receptions}', '${rec_yards}', '${rec_targets}']
-103 : ['${player_name}${receptions}', '${week}', '${opp}']
-86 : ['${player_name}${receptions}', '${week}', '${rec_targets}']
-207 : ['${player_name}${receptions}', '${opp}', '${team}${week}']
-313 : ['${player_name}${receptions}', '${opp}', '${rec_targets}']
-190 : ['${player_name}${receptions}', '${team}${week}', '${rec_targets}']
-155 : ['${rec_yards}', '${week}', '${opp}']
-114 : ['${rec_yards}', '${week}', '${rec_targets}']
-298 : ['${rec_yards}', '${opp}', '${team}${week}']
-113 : ['${rec_yards}', '${opp}', '${player_name}']
-99 : ['${rec_yards}', '${opp}', '${receptions}']
-108 : ['${rec_yards}', '${opp}', '${player_name}${rush_attempts}']
-415 : ['${rec_yards}', '${opp}', '${rec_targets}']
-90 : ['${rec_yards}', '${opp}', '${rush_yards}${receptions}']
-68 : ['${rec_yards}', '${opp}', '${game_dow}${week}']
-75 : ['${rec_yards}', '${team}${week}', '${player_name}']
-68 : ['${rec_yards}', '${team}${week}', '${receptions}']
-73 : ['${rec_yards}', '${team}${week}', '${player_name}${rush_attempts}']
-245 : ['${rec_yards}', '${team}${week}', '${rec_targets}']
-96 : ['${rec_yards}', '${player_name}', '${receptions}']
-82 : ['${rec_yards}', '${player_name}', '${rec_targets}']
-78 : ['${rec_yards}', '${receptions}', '${rec_targets}']
-69 : ['${rec_yards}', '${player_name}${rush_attempts}', '${rec_targets}']
-88 : ['${rec_yards}', '${player_name}${rush_attempts}', '${rush_yards}${receptions}']
-69 : ['${rec_yards}', '${rec_targets}', '${rush_yards}${receptions}']
-107 : ['${week}', '${opp}', '${player_name}']
-121 : ['${week}', '${opp}', '${rec_targets}']
-110 : ['${opp}', '${team}${week}', '${player_name}']
-78 : ['${opp}', '${team}${week}', '${receptions}']
-104 : ['${opp}', '${team}${week}', '${player_name}${rush_attempts}']
-283 : ['${opp}', '${team}${week}', '${rec_targets}']
-86 : ['${opp}', '${team}${week}', '${player_name}${pass_completions}']
-87 : ['${opp}', '${team}${week}', '${pass_attempts}']
-104 : ['${opp}', '${player_name}', '${receptions}']
-97 : ['${opp}', '${player_name}', '${rec_targets}']
-88 : ['${opp}', '${receptions}', '${rec_targets}']
-71 : ['${opp}', '${player_name}${rush_attempts}', '${rec_targets}']
-75 : ['${opp}', '${player_name}${rush_attempts}', '${rush_yards}']
-90 : ['${opp}', '${player_name}${rush_attempts}', '${rush_yards}${receptions}']
-71 : ['${opp}', '${rec_targets}', '${rush_yards}${receptions}']
-179 : ['${opp}', '${player_name}${pass_completions}', '${pass_attempts}']
-64 : ['${opp}', '${player_name}${pass_completions}', '${pass_yards}${pass_td}']
-62 : ['${opp}', '${pass_attempts}', '${pass_yards}']
-64 : ['${opp}', '${pass_attempts}', '${pass_yards}${pass_td}']
-75 : ['${team}${week}', '${player_name}', '${receptions}']
-64 : ['${team}${week}', '${player_name}', '${rec_targets}']
-63 : ['${team}${week}', '${player_name}${rush_attempts}', '${rush_yards}']
-89 : ['${team}${week}', '${player_name}${pass_completions}', '${pass_attempts}']
-86 : ['${player_name}', '${receptions}', '${rec_targets}']
-70 : ['${player_name}${rush_attempts}', '${rec_targets}', '${rush_yards}${receptions}']
-64 : ['${player_name}${pass_completions}', '${pass_attempts}', '${pass_yards}']
-69 : ['${player_name}${pass_completions}', '${pass_attempts}', '${pass_yards}${pass_td}']
+955 : ['${rec_yards}', '${opp}', '${rec_targets}']
+955 : ['${rec_yards}', '${rec_targets}', '${opp}']
+955 : ['${opp}', '${rec_yards}', '${rec_targets}']
+955 : ['${opp}', '${rec_targets}', '${rec_yards}']
+955 : ['${rec_targets}', '${rec_yards}', '${opp}']
+955 : ['${rec_targets}', '${opp}', '${rec_yards}']
 
-Frequent 4-tagsets
-94 : ['${player_name}${receptions}', '${rec_yards}', '${week}', '${opp}']
-77 : ['${player_name}${receptions}', '${rec_yards}', '${week}', '${rec_targets}']
-159 : ['${player_name}${receptions}', '${rec_yards}', '${opp}', '${team}${week}']
-255 : ['${player_name}${receptions}', '${rec_yards}', '${opp}', '${rec_targets}']
-153 : ['${player_name}${receptions}', '${rec_yards}', '${team}${week}', '${rec_targets}']
-81 : ['${player_name}${receptions}', '${week}', '${opp}', '${rec_targets}']
-174 : ['${player_name}${receptions}', '${opp}', '${team}${week}', '${rec_targets}']
-110 : ['${rec_yards}', '${week}', '${opp}', '${rec_targets}']
-72 : ['${rec_yards}', '${opp}', '${team}${week}', '${player_name}']
-66 : ['${rec_yards}', '${opp}', '${team}${week}', '${receptions}']
-230 : ['${rec_yards}', '${opp}', '${team}${week}', '${rec_targets}']
-93 : ['${rec_yards}', '${opp}', '${player_name}', '${receptions}']
-82 : ['${rec_yards}', '${opp}', '${player_name}', '${rec_targets}']
-78 : ['${rec_yards}', '${opp}', '${receptions}', '${rec_targets}']
-66 : ['${rec_yards}', '${opp}', '${player_name}${rush_attempts}', '${rec_targets}']
-85 : ['${rec_yards}', '${opp}', '${player_name}${rush_attempts}', '${rush_yards}${receptions}']
-66 : ['${rec_yards}', '${opp}', '${rec_targets}', '${rush_yards}${receptions}']
-65 : ['${rec_yards}', '${team}${week}', '${player_name}', '${receptions}']
-77 : ['${rec_yards}', '${player_name}', '${receptions}', '${rec_targets}']
-64 : ['${rec_yards}', '${player_name}${rush_attempts}', '${rec_targets}', '${rush_yards}${receptions}']
-73 : ['${opp}', '${team}${week}', '${player_name}', '${receptions}']
-64 : ['${opp}', '${team}${week}', '${player_name}', '${rec_targets}']
-86 : ['${opp}', '${team}${week}', '${player_name}${pass_completions}', '${pass_attempts}']
-86 : ['${opp}', '${player_name}', '${receptions}', '${rec_targets}']
-66 : ['${opp}', '${player_name}${rush_attempts}', '${rec_targets}', '${rush_yards}${receptions}']
-64 : ['${opp}', '${player_name}${pass_completions}', '${pass_attempts}', '${pass_yards}${pass_td}']
-
-Frequent 5-tagsets
-73 : ['${player_name}${receptions}', '${rec_yards}', '${week}', '${opp}', '${rec_targets}']
-138 : ['${player_name}${receptions}', '${rec_yards}', '${opp}', '${team}${week}', '${rec_targets}']
-63 : ['${rec_yards}', '${opp}', '${team}${week}', '${player_name}', '${receptions}']
-77 : ['${rec_yards}', '${opp}', '${player_name}', '${receptions}', '${rec_targets}']
-
-Total no. of frequent-5 tagsets = 4
+Total no. of frequent-3 tagsets = 6
 
 Printing tag-chunks dictionary..
 
@@ -329,80 +67,102 @@ ${player_name}${receptions}:
 ----------------
 ${player_name} caught ${receptions} passes
 ${player_name} delivered ${receptions} catches
-${player_name} nabbed ${receptions} catches
 ${player_name} caught ${receptions}
+${player_name} nabbed ${receptions} catches
 ${player_name} snagged ${receptions} catches
 ${player_name} managed ${receptions} catch
+${player_name} caught all ${receptions}
 ${player_name} secured ${receptions}
+${player_name} contributed ${receptions} catches
 ${player_name} snagged ${receptions}
 ${player_name} earned ${receptions} catches
 ${player_name} corralled ${receptions}
 ${player_name} caught just ${receptions}
 ${player_name} collected ${receptions} catches
 ${player_name} has caught ${receptions}
-${player_name} contributed ${receptions} catches
 ${player_name} brought in ${receptions}
 ${player_name} managed ${receptions} catches
+${player_name} corralled ${receptions} catches
+${player_name} contributed ${receptions} grabs
 ${player_name} brought in all ${receptions}
 ${player_name} snagged all ${receptions}
 ${player_name} grabbed ${receptions}
 ${player_name} supplied ${receptions} catches
-${player_name} caught all ${receptions}
 ${player_name} turned in ${receptions} catches
+${player_name} absorbed ${receptions}
+${player_name} netted ${receptions} grab
 ${player_name} handled all ${receptions}
+${player_name} managed only ${receptions} catches
+${player_name} notched ${receptions} catches
+${player_name} trapped ${receptions}
 ${player_name} brought in ${receptions} catches
 ${player_name} racked up ${receptions} catches
-${player_name} absorbed ${receptions}
+${player_name} registered ${receptions} catches
 ${player_name} totaled just ${receptions} catch
 ${player_name} nabbed ${receptions}
 ${player_name} vacuumed just ${receptions}
 ${player_name} tallied ${receptions} catches
+${player_name} gathered ${receptions} catches
 ${player_name} vacuumed ${receptions}
+${player_name} tacked on ${receptions} catches
 ${player_name} secured ${receptions} catches
+${player_name} compiled ${receptions} catches
 ${player_name} handled ${receptions}
 ${player_name} delivered a team - record ${receptions} catches
 ${player_name} ${receptions} pass
+${player_name} clenched all ${receptions}
 ${player_name} logged ${receptions} catches
 ${player_name} managed just ${receptions} catch
+${player_name} clenched ${receptions}
 ${player_name} grabbed ${receptions} catches
+${player_name} caught all ${receptions} his targets
+${player_name} caught ${receptions} pass
 
 ${rec_yards}: 
 ----------------
 for ${rec_yards} yards and a touchdown
 for a ${rec_yards} yard gain while adding a pair
 for ${rec_yards} yards
+for ${rec_yards} yards and a 2 point conversion
 for ${rec_yards} additional yards
 for ${rec_yards} yards and another score
 for ${rec_yards} receiving yards
 for ${rec_yards} yards and a touchdowin
 for ${rec_yards} yard
 for ${rec_yards} yards and another touchdown
+for ${rec_yards} yards and a receiving touchdown
 for another ${rec_yards} yards
+for ${rec_yards} yards and an additional score
 for ${rec_yards} yards while rushing twice
 for ${rec_yards} yards and the game - winning touchdown
 of ${rec_yards}
+for a ${rec_yards} yard touchdown scamper
+for a ${rec_yards} yard touchdown
 for ${rec_yards} scoreless yards
 for a season - high ${rec_yards} yards
 for ${rec_yards} yards and a pair
 for ${rec_yards} yards and rushed twice
 for a team - high ${rec_yards} yards
+into an ${rec_yards} yard touchdown
 for ${rec_yards} yards and touchdown
-for a ${rec_yards} yard touchdown
+for ${rec_yards} yards and a second touchdown
 for ${rec_yards}
+for ${rec_yards} additional yards and a second score
 for a ${rec_yards} yard gain
+for ${rec_yards} additional yards and a touchdown
 for a ${rec_yards} yard touchdown catch
 for the ${rec_yards} yards
 for an ${rec_yards} yard touchdown
 for ${rec_yards} yards and rushed once
-for ${rec_yards} yards and a receiving touchdown
 for a team - leading ${rec_yards} yards
 for a measly ${rec_yards} yards
-for ${rec_yards} additional yards and a touchdown
+for ${rec_yards} yards and an additional touchdown
 
 ${week}: 
 ----------------
 in week ${week}
 in the Rams' week ${week} win
+in the Rams' week ${week} loss
 in San Francisco's week ${week} loss
 in the Vikings' week ${week} win
 in Buffalo's week ${week} loss
@@ -411,48 +171,60 @@ in the Cowboys' week ${week} loss
 for week ${week}
 in week ${week}.
 in Washington's week ${week} victory
+in the Redskins' week ${week} win
+in the Seahawks' week ${week} loss
+in the Seahawks' week ${week} win
 in the Dolphins' week ${week} loss
 in the Patriots' week ${week} win
+in the week ${week} win
 for week ${week}'s game
 in the 49ers' week ${week} loss
+in the Niners' week ${week} nail - biting loss
 in the Packers' week ${week} tie
 in the Packers' week ${week} loss
 in the Packers' week ${week} win
 in the Panthers' week ${week} win
 in the Bengals' week ${week} loss
+in New England's week ${week} loss
 in the Bears' week ${week} loss
 in the Steelers' week ${week} win
 in the Titans' week ${week} loss
 in the Titans' week ${week} win
+in Seattle's week ${week} win
 in Kansas City's week ${week} loss
 in the Chiefs' week ${week} win
 of week ${week}
+in the Niners' week ${week} loss
+in the Chiefs' week ${week} win over
 in the Colts' week ${week} win
 in the Colts' week ${week} victory
-in the Seahawks' week ${week} loss
 in the Seahawks' week ${week} blowout win
 from week ${week}
 in the Broncos' week ${week} win
 in the Lions' week ${week} win
+in the Packers' week ${week} victory
 after the week ${week} win
 in the week ${week} loss
 in the Eagles' week ${week} loss
 in their week ${week} gameplan
+in Los Angeles' week ${week} loss
 in the fourth quarter week ${week}
 in the Chargers' week ${week} win
-in the Niners' week ${week} loss
 in the Browns' week ${week} win
 in the Browns' week ${week} loss
+in Kansas City's week ${week} win
+in Sundays week ${week} win
 in the Texans' week ${week} win
 in the Colts' week ${week} loss
 to week ${week}
 of ${week} targets
 in the Ravens' week ${week} loss
+in the Niners' week ${week} heartbreaking loss
 in New Orleans' week ${week} win
 in the Bengals' week ${week} win
 in the Broncos' week ${week} loss
-in the Redskins' week ${week} win
 for week ${week}.
+in the Bills' week ${week} win
 in the Bills' week ${week} loss
 in the Cowboys' week ${week} heart - breaking loss
 in the Raiders' week ${week} loss
@@ -463,15 +235,19 @@ in Seattle's week ${week} victory
 in the Saints' week ${week} win
 in the Giants' week ${week} loss
 in the   Chargers' week ${week} win
+in the team's week ${week} victory
 in the Ravens' week ${week} win
+in L.A.'s week ${week} loss
+for ${week} yards
 in the Panthers' week ${week} loss
-in Sundays week ${week} win
 in the Seahawks' week ${week} drubbing
 in Indianapolis' week ${week} win
 for only ${week} yard while catching his lone target
 in the Buccaneeers' week ${week} win
-in the week ${week} win
+in the Packers' week ${week} romping
+in the Lions' week ${week} loss
 in Washington's week ${week} win
+on track " to play week ${week}
 
 ${opp}: 
 ----------------
@@ -484,32 +260,39 @@ against ${opp}.
 to ${opp}.
 against the ${opp} and is questionable to return
 over ${opp}.
+from the ${opp}.
+to the ${opp}
 against the ${opp} and is being evaluated
 at ${opp}.
 over the ${opp}
+over the ${opp} but was benched
+in the Colts' week 8 win over ${opp}.
 against the ${opp} to be evaluated
 against ${opp}
+${opp}.
 by the ${opp}.
+of the ${opp}.
+over the ${opp} , adding 10 carries
 versus the ${opp}.
 versus ${opp}.
 over the ${opp} that he's " fine "
-${opp}.
 at ${opp}
 against the ${opp} and is expected to miss the remainder
-to the ${opp}
+in ${opp}.
 over the ${opp} , adding a 91 yard punt return score
 versus the ${opp} and his return is doubtful
 against the ${opp} but " needs to clear pre - game warmups
-of the ${opp}.
 over the ${opp} , adding 5 rushes
 for shoving ${opp} LB Elijah Lee
+to ${opp} but left late
 of the ${opp}
 to the ${opp} , also losing a fumble and taking 7 sacks
 to the ${opp} , also losing a fumble
-in ${opp}.
 to the ${opp} , also losing 2 fumbles
 to the ${opp} , adding a rushing score
-over the ${opp} , gaining zero yards
+against the ${opp} , taking a seat
+versus the ${opp}
+over the ${opp} before he exited
 
 ${rec_yards}${rush_yards}: 
 ----------------
@@ -522,15 +305,23 @@ ${game_dow}:
 on his lone carry ${game_dow}
 on 4 targets ${game_dow}
 in his lone target ${game_dow}
+on ${game_dow}.
 on his lone target ${game_dow}
-on his only carry ${game_dow}
 on ${game_dow} night
 from ${game_dow}'s game
+of ${game_dow}'s win
+on his only carry ${game_dow}
 of ${game_dow}'s game
 in ${game_dow}'s win
+in ${game_dow}'s game
 on 4 carries ${game_dow}
 in ${game_dow} night's game
+in the second half ${game_dow}.
 on ${game_dow} evening but is expected to make it
+on 11 targets ${game_dow}
+for ${game_dow}'s game
+for 25 yards ${game_dow}
+for another touchdown ${game_dow}
 on his lone catch ${game_dow}
 of his targets ${game_dow}
 in ${game_dow}'s week 4 win
@@ -542,28 +333,41 @@ in the ${team}' week ${week} win
 in the ${team}' week ${week} tie
 in ${team}'s week ${week} game
 in ${team}'s week ${week} loss
+in the ${team}' week ${week} blowout win
 in the ${team}' week ${week} game
 of the ${team}' week ${week} game
 in the ${team}' week ${week} victory
 in ${team}'s week ${week} victory
 in ${team}'s week ${week} win
+in ${team}'s week ${week} destruction
+in the ${team}' week ${week} blowout loss
 in the ${team}' week ${week} , overtime win
 in the ${team}' dreadful week ${week} loss
 in the ${team}' week ${week} romping
+in the ${team}' week ${week}
 in the ${team}' week ${week} win over
 in the ${team}' big week ${week} win
 from the ${team}' week ${week} game
 in ${team}' week ${week} win
 in ${team}' week ${week} loss
+in the ${team}' week ${week} demolition
+in the ${team}' week ${week} defeat
+in the ${team}' week ${week} rout
+in the ${team}' week ${week} heart - breaking loss
 in the ${team}' week ${week} trouncing
 in the ${team}' week ${week} overtime win
+in ${team}'s week ${week} London win over
 in the ${team}' improbable week ${week} win
-in the ${team}' week ${week} rout
 in the ${team}' week ${week} mauling
+in the ${team}' easy week ${week} win
 in the ${team}' week ${week} , overtime loss
+in the ${team}' week ${week} , blowout loss
 in ${team}'s week ${week} win over
+in the ${team}' week ${week} walk
 in the ${team}' week ${week} stomping
 in the ${team}' abysmal week ${week} loss
+in the ${team}' week ${week} give - up
+in the ${team}' week ${week} destruction
 
 ${player_name}${game_dow}${week}: 
 ----------------
@@ -584,102 +388,136 @@ ${player_name} has been ruled out
 ${player_name} is active
 ${player_name} ( knee , ankle , shoulder ) is active
 ${player_name} ( questionable , ankle / shoulder ) is expected to play
+${player_name} did not touch the ball
 ${player_name} could n't haul
+${player_name} ( shoulder ) is questionable to return
+${player_name} will start
 ${player_name} recorded a 95 yard kick - return touchdown
+${player_name} started
+${player_name} ( neck ) is active
 ${player_name} ( knee ) is officially active
 ${player_name} went
 ${player_name} came up empty
+${player_name} rushed twice
 ${player_name} corralled each
 ESPN's Dianna Russini reports ${player_name} is n't expected to have an every - down role
 ${player_name} ( knee ) is active
 ${player_name} ( foot ) is active
 ${player_name} ( questionable , knee ) is expected to play
 ${player_name} rushed 15 times
+${player_name} basically fell down
 ${player_name} ( shoulder ) is active
+${player_name} cruised
 ${player_name} ( ribs ) is expected to play
 ${player_name} ( ribs ) is active
 ${player_name} ( head ) will not return
+${player_name} ( concussion ) is active
 ${player_name} ( elbow ) is active
+${player_name} was forced
+Updating an earlier item , ${player_name} was absent
 ${player_name} failed to catch his only target
 ${player_name} completed 22
 ${player_name} broke out
-${player_name} was forced
+${player_name} blew up
 ${player_name} ( knee ) returned
 ${player_name} was held
+to NFL Network's Ian Rapoport , the " initial concern " is that ${player_name} may have suffered a torn ACL
 to ${player_name}
 ${player_name} failed to catch either
 ${player_name} was ejected
+${player_name} rumbled
+${player_name} fought
+${player_name} chipped in
+${player_name} is " feared " to have suffered a ruptured Achilles' tendon
+${player_name} ( ribs , knee ) is active
+${player_name} did not catch his only target
 NFL Network's Ian Rapoport reports " there's optimism " ${player_name} ( questionable , ankle ) plays
 ${player_name} ( ankle ) is active
-${player_name} chipped in
 ${player_name} rolled
 ${player_name} ( ankle ) said
-${player_name} rushed twice
+NFL Network's Ian Rapoport reports ${player_name} suffered a knee sprain
 ${player_name} is listed
 ${player_name} rushed 21 times
 ${player_name} ( questionable , shoulder / illness ) will play
+${player_name} pulled
 for ${player_name}
+${player_name} rushed 27 times
 NFL Network's Peter Schrager reports ${player_name} cleared the concussion protocol and will play
 ${player_name} ( hamstring ) is active
+According NFL Network's Ian Rapoport , ${player_name} ( hamstring ) is expected to see a " full workload "
 ESPN's Adam Schefter reports ${player_name} ( questionable , hamstring / back ) will play
 ${player_name} ( back , hamstring ) is active
 from benching ${player_name}
 ${player_name} was replaced by Jameis Winston to start the third quarter
+${player_name} replaced Jameis Winston
+${player_name} was replaced by Jameis Winston
+${player_name} completed 12
 ${player_name} caught his lone target
 ${player_name} did not catch any
 ${player_name} is questionable to return
 ${player_name} ( groin ) expects to play
+${player_name} ( ankle ) is expected to play
 ${player_name} rushed once
+${player_name} ( Achilles ) is expected to play
+${player_name} ( Achilles ) was carted off the field
 ${player_name} ( questionable , hamstring ) is expected to play
 ${player_name} ( quad ) is active
 ${player_name} exited
 ${player_name} finished
 ${player_name} came down
+${player_name} caught his only target
+${player_name} ( questionable , ankle ) is expected to play
 Cowboys TE ${player_name} is active
 ${player_name} was carted
 for ${player_name}.
 ${player_name} ( illness ) is officially active
 ${player_name} caught both
 ${player_name} ( knee , shoulder ) is expected to play
+${player_name} ( shoulder , knee ) is officially active
 NFL Network's Omar Ruiz reports ${player_name} is awaiting the birth
-${player_name} pulled
 ESPN's Adam Schefter reports it's " looking more " like ${player_name} will start
 ${player_name} is warming up
-${player_name} will start
 Ravens TE ${player_name} ( foot ) is active
 ${player_name} absorbed both
 ${player_name} ( knee ) will undergo an MRI
+${player_name} was held catch - less
+${player_name} rushed
 ${player_name} ( chest ) returned
 Coach Frank Reich said ${player_name} ( hamstring ) is unlikely to play week 5
 Rams TE ${player_name} ( knee ) is active
 ESPN's Adam Schefter reports ${player_name} has indeed been given another year - long suspension , but that the NFL is allowing him to play while it is
 ESPN's Adam Schefter reports ${player_name} ( concussion ) is expected to suit up
-${player_name} ( concussion ) is active
 ${player_name} suffered a neck injury
+${player_name} turned his only target
+to ESPN's Adam Schefter , ${player_name} ( questionable , ankle ) is expected to play but will likely see limited snaps
+ESPN's Adam Schefter reports both ${player_name} ( ankle ) and Raheem Mostert ( ankle ) are expected to be active
+${player_name} ( ankle ) is officially active
 ${player_name} caught 2
 ${player_name} went 20
+${player_name} corralled his lone target
 ${player_name} rushed 12 times
 ${player_name} ( foot ) is questionable to return
 ${player_name} ( foot ) has been ruled
 to ESPN's Dan Graziano , the Cowboys are " monitoring " ${player_name} ahead
 ${player_name} ( ankle ) will play
 ${player_name} reeled
-${player_name} ( questionable , ankle ) is expected to play
-${player_name} caught his only target
 ${player_name} ( hamstring ) does n't expect to play
+${player_name} corralled 2
 ${player_name} thankfully caught his only target
 FOX Sports' Jay Glazer reports the Raiders are shopping ${player_name}.
 ${player_name} is done
+${player_name} did not catch either
+${player_name} ( hip ) is active
 ${player_name} ( heel ) is active
+${player_name} failed to catch his lone target
 ${player_name} suffered a knee injury
-${player_name} rushed
 ${player_name} exploded
-${player_name} rumbled
 ${player_name} ( back ) is active
 NFL Network's Ian Rapoport confirms ${player_name} ( questionable , heel ) is expected to play
 ${player_name} ( calf ) is active
 ${player_name} did n't catch any
 ${player_name} replaced Ryan Fitzpatrick to start the third quarter
+${player_name} was benched
 ${player_name} ( leg ) has been ruled out
 The Miami Herald confirms ${player_name} is dealing
 ${player_name} ( chest ) is active
@@ -692,12 +530,22 @@ ${player_name} ( groin ) is active
 ${player_name} ( ankle ) has been ruled out
 ${player_name} ( ankle ) and Mohamed Sanu ( hip ) are both active
 ${player_name} ( knee , shoulder ) is active
+${player_name} went catch - less
 ${player_name} nabbed both
 ${player_name} has been diagnosed
-${player_name} went catch - less
+Updating an earlier report , ${player_name} ( groin ) is out
 ${player_name} lost 6 yards
+${player_name} suffered a gruesome leg / ankle injury
 ${player_name} did not haul
-${player_name} did not catch his only target
+CBS Sports' Jason La Canfora reports ${player_name} has a " strong shot " to keep the starting job when Joe Flacco ( hip ) returns
+${player_name} ( knee , illness ) is active
+${player_name} ( ankle , back ) is active
+NFL Network's Ian Rapoport confirms ${player_name} ( questionable , knee / thumb ) is "
+${player_name} ( knee / thumb ) is active
+${player_name} ( hamstring , knee ) is active
+${player_name} converted his lone target
+NFL Network's Ian Rapoport reports ${player_name} still is n't fully recovered
+${player_name} caught 3 of 5 targets
 
 ${rush_yards}${game_dow}: 
 ----------------
@@ -711,6 +559,7 @@ in ${team}' week ${week} win over the ${opp}.
 in the ${team}' week ${week} win over ${opp}.
 in ${team}'s week ${week} upset win over ${opp}.
 in the ${team}' week ${week} upset win over ${opp}.
+in the ${team}' week ${week} romp over ${opp}.
 in ${team}'s week ${week} win over ${opp}.
 
 ${receptions}: 
@@ -718,47 +567,23 @@ ${receptions}:
 in all ${receptions}
 in ${receptions}
 to ${receptions} catch
+to ${receptions} catches
 with ${receptions} reception
 for 93 yards and caught ${receptions} passes
-in ${receptions} catches
 with ${receptions} catches
+in ${receptions} catches
+for 76 yards and caught ${receptions}
+on ${receptions} catches
+in ${receptions} grabs
 of ${receptions} yard
+in just ${receptions}
 with ${receptions} catch
 for 16 yards , adding ${receptions} catches
 for 44 yards and caught all ${receptions}
-on ${receptions} catches
 in a team - high ${receptions}
 on his lone carry while nabbing ${receptions} catches
 into ${receptions} catches
 by snagging ${receptions} catches
-
-${rec_targets}${rush_attempts}: 
-----------------
-on ${rec_targets} targets while adding ${rush_attempts} rush
-
-${player_name}${rush_attempts}: 
-----------------
-${player_name} rushed ${rush_attempts} times
-${player_name} handled a team - high ${rush_attempts} carries
-${player_name} managed just ${rush_attempts} yards
-${player_name} rushed just ${rush_attempts} times
-${player_name} handled ${rush_attempts} carries
-Making his 2018 debut , ${player_name} rushed ${rush_attempts} times
-${player_name} had ${rush_attempts} carries
-${player_name} rushed ${rush_attempts} time
-${player_name} had ${rush_attempts} carry
-${player_name} rushed just ${rush_attempts} time
-
-${rush_yards}${rush_td}${receptions}: 
-----------------
-for ${rush_yards} yards and ${rush_td} touchdowns and caught all ${receptions}
-for ${rush_yards} yards and ${rush_td} touchdown and caught ${receptions} passes
-for ${rush_yards} yards and ${rush_td} touchdowns while catching ${receptions}
-for ${rush_yards} yards and ${rush_td} touchdowns and caught ${receptions}
-for ${rush_yards} yards and ${rush_td} touchdowns while also nabbing ${receptions} catches
-for ${rush_yards} yards and ${rush_td} touchdown and caught ${receptions}
-for ${rush_yards} yards and ${rush_td} touchdown , adding ${receptions} catches
-for ${rush_yards} yards and ${rush_td} touchdowns while catching ${receptions} passes
 
 ${rec_targets}: 
 ----------------
@@ -771,6 +596,41 @@ on ${rec_targets} carries along
 on a team - high ${rec_targets} targets
 on only ${rec_targets} targets
 of ${rec_targets} yards
+on ${rec_targets} targets while losing 6 yards
+
+${rec_targets}${rush_attempts}: 
+----------------
+on ${rec_targets} targets while adding ${rush_attempts} rush
+
+${player_name}${rush_attempts}: 
+----------------
+${player_name} rushed ${rush_attempts} times
+${player_name} had ${rush_attempts} carries
+${player_name} handled a team - high ${rush_attempts} carries
+${player_name} managed just ${rush_attempts} yards
+${player_name} carried the ball ${rush_attempts} times
+${player_name} rushed just ${rush_attempts} times
+${player_name} handled ${rush_attempts} carries
+Making his 2018 debut , ${player_name} rushed ${rush_attempts} times
+${player_name} rushed ${rush_attempts} time
+${player_name} rushed a team - high ${rush_attempts} times
+${player_name} received ${rush_attempts} carries
+Undrafted rookie ${player_name} rushed ${rush_attempts} times
+${player_name} had ${rush_attempts} carry
+${player_name} rushed just ${rush_attempts} time
+
+${rush_yards}${rush_td}${receptions}: 
+----------------
+for ${rush_yards} yards and ${rush_td} touchdowns and caught all ${receptions}
+for ${rush_yards} yards and ${rush_td} touchdown and caught ${receptions} passes
+for ${rush_yards} yards and ${rush_td} touchdowns while catching ${receptions}
+for ${rush_yards} yards and ${rush_td} touchdowns and caught ${receptions}
+for ${rush_yards} yards and ${rush_td} touchdown and caught ${receptions}
+for ${rush_yards} yards and ${rush_td} touchdowns while also nabbing ${receptions} catches
+for ${rush_yards} yards and ${rush_td} touchdowns and hauled in ${receptions}
+for ${rush_yards} yards and ${rush_td} touchdown , adding ${receptions} catches
+for ${rush_yards} yards and ${rush_td} score , tacking on ${receptions} catches
+for ${rush_yards} yards and ${rush_td} touchdowns while catching ${receptions} passes
 
 ${rush_yards}: 
 ----------------
@@ -780,20 +640,27 @@ for ${rush_yards} yards and a touchdown
 for ${rush_yards} yards and missed his lone target
 for ${rush_yards} scoreless yards
 for ${rush_yards} additional yards
-for ${rush_yards} yards and hauled
 for ${rush_yards} yards and caught both
+for ${rush_yards} yards and turned his only target
+to ${rush_yards} yards and a touchdown
+for ${rush_yards} yards and hauled
 to ${rush_yards} yards
+for ${rush_yards} yards , tacking
 for ${rush_yards} yards and caught his lone target
+with ${rush_yards} yards
 for ${rush_yards} yards and touchdown
 for ${rush_yards} yards and caught his only target
+in London , adding ${rush_yards} yards
+for ${rush_yards} yards and a touchdown and caught his lone target
+for ${rush_yards} yards and a touchdown while catching his lone target
+for ${rush_yards} yards , additionally hauling
 for ${rush_yards} yards , additionally scampering
-to ${rush_yards} yards and a touchdown
+for a ${rush_yards} yard touchdown
 for ${rush_yards} yards and an additional score
 for ${rush_yards} yards and a rushing touchdown
 for just ${rush_yards} yard
 of touchdowns while adding ${rush_yards} yards
 with no touchdowns or interceptions while supplying ${rush_yards} yards
-for a ${rush_yards} yard touchdown
 
 ${opp}${receptions}: 
 ----------------
@@ -801,15 +668,21 @@ over the ${opp} , adding ${receptions} receptions
 to the ${opp} , adding ${receptions} receptions
 over the ${opp} , adding ${receptions} catches
 to the ${opp} , adding a ridiculous ${receptions} receptions
+to the ${opp} , adding a ${receptions} point conversion
 to the ${opp} , adding ${receptions} catches
+to the ${opp} , adding a ${receptions} yard rush
 
 ${rush_yards}${receptions}: 
 ----------------
+for ${rush_yards} yards and a touchdown and hauled in ${receptions}
 for ${rush_yards} yard and added ${receptions} catches
+for ${rush_yards} yards and a touchdown and caught ${receptions}
 for ${rush_yards} yards and caught ${receptions}
 for ${rush_yards} yards , but caught ${receptions}
 for ${rush_yards} yards and hauled in ${receptions}
-for ${rush_yards} yards and a touchdown and caught ${receptions}
+for ${rush_yards} yards and a touchdown and caught ${receptions} pass
+for ${rush_yards} yards while catching ${receptions} passes
+for ${rush_yards} yards and hauled in all ${receptions}
 for ${rush_yards} yards and caught all ${receptions}
 for ${rush_yards} yards , adding ${receptions} catches
 for ${rush_yards} yards and caught ${receptions} passes
@@ -817,20 +690,25 @@ for ${rush_yards} yards while catching ${receptions} pass
 for ${rush_yards} yards while catching ${receptions}
 for ${rush_yards} yards while catching all ${receptions}
 for ${rush_yards} yards and a touchdown while catching ${receptions}
+for ${rush_yards} yards and a touchdown and hauled in all ${receptions}
+for ${rush_yards} yards and a touchdown while catching ${receptions} passes
 for ${rush_yards} yards , and also added ${receptions} receptions
 for ${rush_yards} yards and a touchdown and caught ${receptions} passes
-for ${rush_yards} yards and hauled in all ${receptions}
+for ${rush_yards} yards and caught ${receptions} pass
 for ${rush_yards} yards while corralling ${receptions}
 for ${rush_yards} yards but caught ${receptions}
 for ${rush_yards} yards while also pulling in ${receptions} catches
 for ${rush_yards} yard and caught all ${receptions}
-for ${rush_yards} yards while catching ${receptions} passes
+for a ${rush_yards} yard pick - up while snaring ${receptions} catches
 
 ${rush_yards}${rush_td}: 
 ----------------
 for ${rush_yards} yards and ${rush_td} touchdowns
 for ${rush_yards} yards and ${rush_td} touchdown
+for ${rush_yards} yards and ${rush_td} touchdowns and caught his lone target
 to ${rush_yards} yards and ${rush_td} touchdown
+for ${rush_yards} yards and ${rush_td} touchdowns , tacking
+for a season - high ${rush_yards} yards and ${rush_td} touchdowns , tacking
 for ${rush_yards} yards and ${rush_td} scores
 for ${rush_yards} yards and ${rush_td} score
 
@@ -842,11 +720,14 @@ ESPN's Adam Schefter reports ${player_name} ( knee ) is expected to play week ${
 ${player_name} ( questionable , knee ) is expected to play week ${week}
 ${player_name} ( knee ) is active week ${week}
 ${player_name} ( questionable , foot ) is expected to play week ${week}
-NFL Network's Ian Rapoport reports ${player_name} ( questionable , shoulder / illness ) will be a game - time decision week ${week}
-NFL Network's Ian Rapoport confirms ${player_name} ( questionable , hamstring ) is expected to play week ${week}
+${player_name} ( questionable , ribs / knee ) is expected to play week ${week}
 ${player_name} ( questionable , ankle ) is expected to play week ${week}
+NFL Network's Ian Rapoport reports ${player_name} ( questionable , shoulder / illness ) will be a game - time decision week ${week}
+NFL Network's Ian Rapoport confirms ${player_name} will start week ${week}
+NFL Network's Ian Rapoport confirms ${player_name} ( questionable , hamstring ) is expected to play week ${week}
 ESPN's Adam Schefter reports ${player_name} suffered a Lisfranc injury week ${week}
 ${player_name} ( questionable , hamstring ) is expected to play week ${week}
+${player_name} failed to corral his only target week ${week}
 ${player_name} ( questionable , illness ) is expected to play week ${week}
 ${player_name} ( shoulder , knee ) is active week ${week}
 Ravens TE ${player_name} ( questionable , foot ) is expected to play week ${week}
@@ -856,20 +737,37 @@ ${player_name} ( ankle , shoulder ) is active week ${week}
 ${player_name} ( questionable , shoulder ) is expected to play week ${week}
 ${player_name} recorded ${week} receptions
 ${player_name} ( questionable , hamstring ) will be a game - time decision week ${week}
+${player_name} turned ${week} carries
 ${player_name} is starting week ${week}
 ${player_name} left week ${week}
 ESPN's Adam Schefter reports ${player_name} suffered a broken ankle week ${week}
 ${player_name} ( heel ) is active week ${week}
+${player_name} ( foot ) is active and will start week ${week}
+${player_name} ( questionable , groin ) is expected to play week ${week}
 to NFL Network's Ian Rapoport , ${player_name} ( questionable , knee / shoulder ) will be a game - time decision week ${week}
+NFL Network's Ian Rapoport reports ${player_name} will start week ${week}
 NFL Network's Ian Rapoport reports ${player_name} ( questionable , hip ) will play week ${week}
+${player_name} ( questionable , groin ) is not expected to play week ${week}
+NFL Network's Ian Rapoport reports ${player_name} ( groin ) is expected to be active week ${week}
+${player_name} ( questionable , thumb ) is expected to play week ${week}
+${player_name} ( questionable , knee / illness ) will play week ${week}
+to NFL Network's Ian Rapoport , ${player_name} ( questionable , groin ) has a " good shot " to play week ${week}
+${player_name} ( questionable , ankle / back ) will play week ${week}
+to ESPN's Adam Schefter , ${player_name} ( questionable , hamstring / knee ) " plans " to play week ${week}
+ESPN's Eric Williams reports ${player_name} suffered an MCL injury week ${week}
+NFL Network's Ian Rapoport confirms ${player_name} ( questionable , ankle ) is expected to play week ${week}
 
 ${rec_yards}${rec_td}: 
 ----------------
 for ${rec_yards} yards and ${rec_td} touchdown
+for ${rec_yards} yards and ${rec_td} additional scores
 for ${rec_yards} yards and ${rec_td} touchdowns
+for a season - high ${rec_yards} yards and ${rec_td} score
 for a team - high ${rec_yards} yards and ${rec_td} score
 for a career - high ${rec_yards} yards and ${rec_td} touchdowns
 for ${rec_yards} yards and ${rec_td} score
+for ${rec_yards} yards and ${rec_td} touchdowns and rushed once
+for ${rec_yards} yards and ${rec_td} scores
 
 ${rec_targets}${game_dow}: 
 ----------------
@@ -880,9 +778,10 @@ of his ${rec_targets} targets ${game_dow}
 ${player_name}${pass_completions}: 
 ----------------
 ${player_name} completed ${pass_completions}
-of an injured Tyrod Taylor ( concussion ) , ${player_name} completed ${pass_completions}
-${player_name} competed ${pass_completions}
 ${player_name} completed just ${pass_completions}
+of an injured Tyrod Taylor ( concussion ) , ${player_name} completed ${pass_completions}
+${player_name} efficiently completed ${pass_completions}
+${player_name} competed ${pass_completions}
 ${player_name} managed to complete ${pass_completions}
 Making his NFL debut , ${player_name} completed ${pass_completions}
 
@@ -895,19 +794,20 @@ ${pass_yards}:
 ----------------
 for ${pass_yards} yards
 for ${pass_yards} yards and a touchdown
+for ${pass_yards} scoreless yards
 for a career - high ${pass_yards} yards
-for ${pass_yards} yards , zero touchdowns and zero interceptions
 for ${pass_yards} yards and an interception
-for ${pass_yards} yards , zero touchdowns and an interception
-for ${pass_yards} yards , zero touchdowns , and an interception
 for ${pass_yards} yards and bulldozed his way
+for ${pass_yards} yards , no touchdowns , and to interceptions
 for ${pass_yards} yards , a touchdown , and an interception
 for ${pass_yards} yards and no touchdowns
 for ${pass_yards} yards and a pair
+for ${pass_yards}
 
 ${pass_int}${rush_yards}: 
 ----------------
 with a touchdown and ${pass_int} interceptions while adding ${rush_yards} yards
+with ${pass_int} interceptions while adding an additional ${rush_yards} yards and a touchdown
 
 ${rush_attempts}${game_dow}: 
 ----------------
@@ -934,68 +834,169 @@ for ${pass_yards} yards , ${pass_td} touchdowns , and an interception
 for ${pass_yards} yards and ${pass_td} touchdown
 for ${pass_yards} yards , ${pass_td} touchdowns and an interception
 for ${pass_yards} yards , ${pass_td} touchdown and an interception
+for ${pass_yards} yards , ${pass_td} scores , and an interception
+for ${pass_yards} yards and ${pass_td} score
 for ${pass_yards} yards , ${pass_td} touchdown , and an interception
-for ${pass_yards} yards , ${pass_td} touchdowns and zero interceptions
-for ${pass_yards} yards , ${pass_td} touchdown and zero interceptions
+for ${pass_yards} yards and ${pass_td} touchdowns while rushing
+for ${pass_yards} yards and ${pass_td} touchdowns and rushed twice
 
 ${rush_yards}${pass_td}: 
 ----------------
 in another ${rush_yards} yards and ${pass_td} score
 for ${rush_yards} yards and ${pass_td} additional scores
 
+${pass_yards}${pass_td}${pass_int}: 
+----------------
+for ${pass_yards} yards , ${pass_td} touchdowns , and ${pass_int} interception
+for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} interceptions
+for ${pass_yards} yards , ${pass_td} touchdowns and ${pass_int} interceptions
+for ${pass_yards} yards , ${pass_td} touchdowns , and ${pass_int} interceptions
+for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} interception
+for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} pick
+for ${pass_yards} yards , ${pass_td} touchdown and ${pass_int} interceptions
+for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} picks
+for ${pass_yards} yards , ${pass_td} touchdowns , and ${pass_int} pick
+for ${pass_yards} yards , ${pass_td} touchdowns and ${pass_int} interception
+
+${opp}${rush_attempts}: 
+----------------
+over the ${opp} , adding a ${rush_attempts} yard rushing touchdown
+over the ${opp} and rushed ${rush_attempts} times
+to the ${opp} , adding ${rush_attempts} carries
+over the ${opp} , adding ${rush_attempts} rushes
+to the ${opp} , adding a ${rush_attempts} yard reception
+over the ${opp} , adding a ${rush_attempts} yard rush
+over the ${opp} , adding ${rush_attempts} carries
+to the ${opp} , adding ${rush_attempts} rushes
+
+${rush_yards}${rec_yards}: 
+----------------
+for ${rush_yards} yards and a touchdown and caught a ${rec_yards} yard score
+for ${rush_yards} yards and caught a ${rec_yards} yard touchdown
+into ${rush_yards} yards and a touchdown while adding a ${rec_yards} yard catch
+for ${rush_yards} yards and a touchdown and caught a ${rec_yards} yard pass
+
+${player_name}${rush_yards}: 
+----------------
+${player_name} managed ${rush_yards} yards
+${player_name} soaked up ${rush_yards} yards
+${player_name} earned ${rush_yards} yards
+${player_name} collected ${rush_yards} yards
+${player_name} totaled ${rush_yards} yards
+${player_name} delivered ${rush_yards} yards and a touchdown
+${player_name} produced ${rush_yards} yards and a touchdown
+${player_name} accrued ${rush_yards} yards and a touchdown
+${player_name} registered ${rush_yards} yards
+${player_name} logged ${rush_yards} yards
+${player_name} scrounged up ${rush_yards} yards
+${player_name} contributed ${rush_yards} yards and a touchdown
+${player_name} tallied ${rush_yards} yards
+${player_name} delivered just ${rush_yards} yards
+${player_name} gained ${rush_yards} yard
+${player_name} delivered ${rush_yards} yards
+${player_name} netted just ${rush_yards} yards
+${player_name} tallied ${rush_yards} yards and a touchdown
+${player_name} rolled up ${rush_yards} yards
+${player_name} gained ${rush_yards} yards
+${player_name} contributed just ${rush_yards} yards
+
+${rush_attempts}${receptions}: 
+----------------
+on ${rush_attempts} carries and caught ${receptions}
+on ${rush_attempts} carries while also securing ${receptions}
+on ${rush_attempts} carries while also securing ${receptions} targets
+on ${rush_attempts} carries while also snagging ${receptions} catches
+on ${rush_attempts} carries while also chipping in with ${receptions} catches
+on ${rush_attempts} carries while also grabbing ${receptions} catches
+on ${rush_attempts} carries while corralling ${receptions}
+on ${rush_attempts} carries while also contributing ${receptions} catches
+on ${rush_attempts} carries while nabbing ${receptions} catches
+on ${rush_attempts} carries while adding ${receptions} catches
+on ${rush_attempts} carries while also snaring ${receptions} catches
+on ${rush_attempts} carries while snagging ${receptions} catches
+on ${rush_attempts} carries while also producing ${receptions} catches
+on ${rush_attempts} carries while adding ${receptions} catch
+on ${rush_attempts} carries while delivering ${receptions} catches
+on ${rush_attempts} carries while snagging ${receptions}
+on ${rush_attempts} carries while also earning ${receptions} catches
+on ${rush_attempts} carries while securing ${receptions}
+on ${rush_attempts} carries while collecting ${receptions} catches
+on ${rush_attempts} carries while pulling in all ${receptions}
+on ${rush_attempts} carries while snaring ${receptions}
+on ${rush_attempts} carries while also securing ${receptions} catches
+on ${rush_attempts} carries while adding ${receptions} grabs
+
 ${game_dow}${week}: 
 ----------------
 in ${game_dow}'s week ${week} win
 in ${game_dow}'s week ${week} loss
 to ${game_dow}'s week ${week} game
+after ${game_dow}'s week ${week} win
 in ${game_dow}'s week ${week} game
+of ${game_dow}'s week ${week} loss
 in ${game_dow}'s week ${week} trouncing
 for ${game_dow}'s week ${week} game
 of ${game_dow}'s week ${week} game
 in ${game_dow}'s week ${week} tie
 in ${game_dow} night's week ${week} loss
+from ${game_dow}'s week ${week} game
 
 ${team}${player_position}${player_name}${receptions}: 
 ----------------
 ${team} ${player_position} ${player_name} caught ${receptions}
 
+${pass_td}: 
+----------------
+with ${pass_td} touchdowns
+with ${pass_td} touchdowns and an interception
+for 377 yards , ${pass_td} touchdowns and an interception
+with ${pass_td} touchdowns and a pair
+with ${pass_td} touchdown and an interception
+for 354 yards and ${pass_td} touchdowns
+for 304 yards and ${pass_td} touchdowns
+with ${pass_td} touchdown
+
+${team}${opp_score}${team_score}${week}: 
+----------------
+in the ${team}' ${opp_score}-${team_score} , week ${week} loss
+
+${team}${player_position}${player_name}: 
+----------------
+${team} ${player_position} ${player_name} will start
+${team} ${player_position} ${player_name} was forced
+${team} ${player_position} ${player_name} ( shoulder ) is active
+${team} ${player_position} ${player_name} is expected to start
+${team} ${player_position} ${player_name} suffered a torn patella tendon
+${team} ${player_position} ${player_name} ( groin ) is active
+${team} activated ${player_position} ${player_name} ( hamstring )
+${team} ${player_position} ${player_name} is active
+${team} ${player_position} ${player_name} was held catch - less
+${team} ${player_position} ${player_name} ( ankle ) is active
+
 ${opp}${rec_yards}: 
 ----------------
 over the ${opp} , adding a ${rec_yards} yard reception
 to the ${opp} , adding a ${rec_yards} yard catch
+over the ${opp} , adding an ${rec_yards} yard reception
+to the ${opp} , adding an ${rec_yards} yard reception
 to the ${opp} , adding a ${rec_yards} yard reception
 over the ${opp} , adding a ${rec_yards} yard touchdown reception
-
-${player_name}${rush_yards}: 
-----------------
-${player_name} soaked up ${rush_yards} yards
-${player_name} earned ${rush_yards} yards
-${player_name} managed ${rush_yards} yards
-${player_name} totaled ${rush_yards} yards
-${player_name} delivered ${rush_yards} yards and a touchdown
-${player_name} accrued ${rush_yards} yards and a touchdown
-${player_name} registered ${rush_yards} yards
-${player_name} logged ${rush_yards} yards
-${player_name} contributed ${rush_yards} yards and a touchdown
-${player_name} tallied ${rush_yards} yards
-${player_name} netted just ${rush_yards} yards
-${player_name} tallied ${rush_yards} yards and a touchdown
-${player_name} delivered ${rush_yards} yards
-${player_name} collected ${rush_yards} yards
-${player_name} gained ${rush_yards} yards
-${player_name} contributed just ${rush_yards} yards
+over the ${opp} , gaining ${rec_yards} yards
 
 ${rush_attempts}: 
 ----------------
 on ${rush_attempts} carries while nabbing both
 on ${rush_attempts} carries
+on all ${rush_attempts}
+on ${rush_attempts} attempts
 on ${rush_attempts} carries while converting his lone target
+on ${rush_attempts} carries while securing his lone target
 on ${rush_attempts} carries while turning his lone target
 on ${rush_attempts} carries while failing to reel
 on ${rush_attempts} carries while catching his lone target
+on ${rush_attempts} carries and caught his lone target
 for 158 yards and rushed ${rush_attempts} times
 with an interception while rushing ${rush_attempts} times
-on ${rush_attempts} carries while securing his lone target
 on ${rush_attempts} carries but made up
 
 ${rec_yards}${game_dow}: 
@@ -1004,42 +1005,34 @@ for ${rec_yards} yards ${game_dow}
 for ${rec_yards} yards and a touchdown ${game_dow}
 for an additional ${rec_yards} yards ${game_dow}
 for a ${rec_yards} yard gain ${game_dow}
+for a ${rec_yards} yard pickup ${game_dow}
 into an ${rec_yards} yard catch ${game_dow}
-for a team - high ${rec_yards} yards and a touchdown ${game_dow}
 for an ${rec_yards} yard gain ${game_dow}
+for a team - high ${rec_yards} yards and a touchdown ${game_dow}
 for ${rec_yards} receiving yards ${game_dow}
+for a team - high ${rec_yards} yards ${game_dow}
 
-${rush_attempts}${receptions}: 
+${week}${team}: 
 ----------------
-on ${rush_attempts} carries while also securing ${receptions}
-on ${rush_attempts} carries while also securing ${receptions} targets
-on ${rush_attempts} carries while also chipping in with ${receptions} catches
-on ${rush_attempts} carries while corralling ${receptions}
-on ${rush_attempts} carries while adding ${receptions} catches
-on ${rush_attempts} carries while snagging ${receptions} catches
-on ${rush_attempts} carries while adding ${receptions} catch
-on ${rush_attempts} carries and caught ${receptions}
-on ${rush_attempts} carries while delivering ${receptions} catches
-on ${rush_attempts} carries while also earning ${receptions} catches
-on ${rush_attempts} carries while securing ${receptions}
-on ${rush_attempts} carries while also contributing ${receptions} catches
-on ${rush_attempts} carries while collecting ${receptions} catches
-
-${opp}${rush_attempts}: 
-----------------
-to the ${opp} , adding ${rush_attempts} carries
-over the ${opp} , adding ${rush_attempts} rushes
-over the ${opp} , adding ${rush_attempts} carries
-to the ${opp} , adding ${rush_attempts} rushes
+in his week ${week} ${team} debut
 
 ${opp}${rush_yards}: 
 ----------------
 to the ${opp} , adding ${rush_yards} yards rushing while losing a pair
-over the ${opp} , adding ${rush_yards} yards and a touchdown
 over the ${opp} , adding a ${rush_yards} yard rush
+over the ${opp} , adding ${rush_yards} yards and a touchdown
+to the ${opp} , adding an ${rush_yards} yard carry
+over the ${opp} , adding ${rush_yards} rushing and a third touchdown
+over the ${opp} , adding a ${rush_yards} yard rushing touchdown
 to the ${opp} , adding a ${rush_yards} yard rush
 over the ${opp} , adding ${rush_yards} yards
 to the ${opp} , adding ${rush_yards} yards and a touchdown
+over the ${opp} , adding a ${rush_yards} yard reception
+to the ${opp} , adding ${rush_yards} yards
+
+${opp}${rec_targets}: 
+----------------
+to the ${opp} , adding a ${rec_targets} yard rush
 
 ${pass_td}${pass_int}${rush_yards}: 
 ----------------
@@ -1047,9 +1040,9 @@ with ${pass_td} touchdowns and ${pass_int} interceptions while adding ${rush_yar
 with ${pass_td} touchdown and ${pass_int} interception while adding ${rush_yards} yards
 with ${pass_td} touchdowns and ${pass_int} interception while adding ${rush_yards} yards
 
-${team}${opp_score}${team_score}${week}: 
+${pass_yards}${pass_int}${team}${week}: 
 ----------------
-in the ${team}' ${opp_score}-${team_score} , week ${week} loss
+for ${pass_yards} yards and ${pass_int} pick in ${team}'s dreadful week ${week} loss
 
 ${player_name}${rec_yards}: 
 ----------------
@@ -1059,11 +1052,23 @@ ${player_name} caught an ${rec_yards} yard touchdown
 ${player_name} took his only target ${rec_yards} yards
 ${player_name} caught a ${rec_yards} yard touchdown
 
+${pass_yards}${pass_int}: 
+----------------
+for ${pass_yards} yards and ${pass_int} interceptions
+for ${pass_yards} yards , no touchdowns , and ${pass_int} interception
+for ${pass_yards} yards , a touchdown , and ${pass_int} interceptions
+
 ${team}${player_name}: 
 ----------------
 NFL Network's Ian Rapoport reports the ${team} are unlikely to trade ${player_name}.
 ${team} ruled out ${player_name} and Brandin Cooks
+NFL Network's Ian Rapoport reports the ${team} will keep ${player_name}
+${team} coach Andy Reid said ${player_name} suffered a groin strain
 ${team} PR ${player_name} was forced
+${team} listed ${player_name}
+NFL Network's Ian Rapoport reports the ${team} plan to line up ${player_name}
+NFL Network's Ian Rapoport reports the ${team} plan to use ${player_name}
+to NFL Network's Ian Rapoport , the ${team} envision ${player_name}
 
 ${team}: 
 ----------------
@@ -1076,8 +1081,15 @@ against the ${team}
 to NFL Network's Ian Rapoport , the ${team} have reached a compromise
 ESPN's Adam Schefter reports the ${team} have no plans to acquire a quarterback
 in ${team}'s season opener
+to ESPN's Adam Schefter , the ${team} are committed
+in the ${team}' week 9 win
+in the ${team}' near - comeback loss
+in the ${team}' come -
 in the ${team}' week 5 loss
 ${team} CEO and president Mark Murphy downplayed the tension
+in ${team}'s week 13 loss
+in the ${team}' Thanksgiving loss
+in the ${team}' Thanksgiving victory
 
 ${team_score}${week}: 
 ----------------
@@ -1091,24 +1103,15 @@ in the ${team}' ${team_score}-${opp_score} , week ${week} demolition
 in the ${team}' ${team_score}-${opp_score} , week ${week} rout
 in the ${team}' ${team_score}-${opp_score} , week ${week} comeback win
 
-${pass_yards}${pass_td}${pass_int}: 
-----------------
-for ${pass_yards} yards , ${pass_td} touchdowns , and ${pass_int} interceptions
-for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} interception
-for ${pass_yards} yards , ${pass_td} touchdowns and ${pass_int} interceptions
-for ${pass_yards} yards , ${pass_td} touchdowns , and ${pass_int} interception
-for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} pick
-for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} interceptions
-for ${pass_yards} yards , ${pass_td} touchdown and ${pass_int} interceptions
-for ${pass_yards} yards , ${pass_td} touchdown , and ${pass_int} picks
-
 ${pass_td}${pass_int}: 
 ----------------
 with ${pass_td} touchdown and ${pass_int} interception
 with ${pass_td} touchdown and ${pass_int} interceptions
+with ${pass_td} touchdowns and ${pass_int} interception
 with ${pass_td} touchdowns and ${pass_int} interceptions
 for 377 yards , ${pass_td} touchdowns and ${pass_int} interceptions
-with ${pass_td} touchdowns and ${pass_int} interception
+with ${pass_td} touchdowns and ${pass_int} interceptions while losing 4 yards
+for 294 yards , ${pass_td} touchdown , and ${pass_int} interception
 
 ${pass_yards}${rush_attempts}: 
 ----------------
@@ -1130,12 +1133,9 @@ ${pass_yards}${pass_int}${rush_attempts}:
 ----------------
 for ${pass_yards} yards and ${pass_int} interceptions and rushed ${rush_attempts} times
 
-${pass_td}: 
+${pass_td}${pass_int}${pass_int}: 
 ----------------
-with ${pass_td} touchdowns and an interception
-for 377 yards , ${pass_td} touchdowns and an interception
-for 354 yards and ${pass_td} touchdowns
-with ${pass_td} touchdown and an interception
+with ${pass_td} touchdowns and ${pass_int} interception while losing ${pass_int} yard
 
 ${team}${player_position}${player_name}${week}: 
 ----------------
@@ -1143,34 +1143,44 @@ ${team} ${player_position} ${player_name} left week ${week}
 ${team} ${player_position} ${player_name} ( knee ) is questionable to return week ${week}
 ${team} ${player_position} ${player_name} exited week ${week}
 
+${player_name}${game_dow}: 
+----------------
+ESPN's Adam Schefter reports ${player_name} ( knee ) is expected to play ${game_dow} night
+from the practice squad suggests ${player_name} ( knee ) may be inactive ${game_dow} night
+ESPN's Dianna Russini reports ${player_name} ( knee ) is expected to play ${game_dow} night
+${player_name} was reportedly tardy at least twice this past week leading up to ${game_dow} night's game
+to NFL Network's Ian Rapoport , ${player_name} may have torn his PCL ${game_dow}
+NFL Network's Tom Pelissero reports ${player_name} ( ankle ) is " pushing to play " ${game_dow} night
+ESPN's Adam Schefter reports ${player_name} ( ankle ) is expected to play ${game_dow} night
+
 ${player_position}: 
 ----------------
 of ${player_position} Ross Dwelley
 
-${player_name}${game_dow}: 
+${rec_td}: 
 ----------------
-from the practice squad suggests ${player_name} ( knee ) may be inactive ${game_dow} night
-ESPN's Adam Schefter reports ${player_name} ( knee ) is expected to play ${game_dow} night
-ESPN's Dianna Russini reports ${player_name} ( knee ) is expected to play ${game_dow} night
-NFL Network's Tom Pelissero reports ${player_name} ( ankle ) is " pushing to play " ${game_dow} night
-ESPN's Adam Schefter reports ${player_name} ( ankle ) is expected to play ${game_dow} night
-
-${pass_yards}${pass_int}: 
-----------------
-for ${pass_yards} yards , no touchdowns , and ${pass_int} interception
-for ${pass_yards} yards , a touchdown , and ${pass_int} interceptions
-for ${pass_yards} yards , zero touchdowns and ${pass_int} interceptions
+with ${rec_td} touchdown
 
 ${team_score}${opp_score}${week}: 
 ----------------
 in the Broncos' ${team_score}-${opp_score} , week ${week} win
 in the Falcons' ${team_score}-${opp_score} , week ${week} win
+in the Rams' ${team_score}-${opp_score} , week ${week} win
 in the Steelers' ${team_score}-${opp_score} , week ${week} win
 in the Saints' ${team_score}-${opp_score} , week ${week} win
 from - behind ${team_score}-${opp_score} , week ${week} win
 in the Texans' ${team_score}-${opp_score} , week ${week} win
 in the Vikings' ${team_score}-${opp_score} , week ${week} win
 in the Lions' ${team_score}-${opp_score} , week ${week} win
+
+${pass_td}${pass_int}${rush_yards}${game_dow}: 
+----------------
+with ${pass_td} touchdowns and ${pass_int} interception while adding a ${rush_yards} yard carry ${game_dow}
+
+${pass_yards}${game_dow}: 
+----------------
+for ${pass_yards} yards ${game_dow}
+for ${pass_yards} yards and a touchdown ${game_dow}
 
 ${opp_score}${team_score}${week}: 
 ----------------
@@ -1182,19 +1192,12 @@ in New York's ${opp_score}-${team_score} , week ${week} loss
 ${pass_yards}${pass_td}${rush_attempts}: 
 ----------------
 for ${pass_yards} yards and ${pass_td} touchdowns while adding ${rush_attempts} rushes
+for ${pass_yards} yards and ${pass_td} touchdowns while losing ${rush_attempts} yards
 for ${pass_yards} yards and ${pass_td} touchdowns , and rushed ${rush_attempts} times
 for ${pass_yards} yards and ${pass_td} touchdowns and rushed ${rush_attempts} times
 for ${pass_yards} yards and ${pass_td} touchdowns while also adding ${rush_attempts} carries
 for ${pass_yards} yards and ${pass_td} touchdown , adding ${rush_attempts} carries
 for ${pass_yards} yards and ${pass_td} touchdowns while adding ${rush_attempts} rush
-
-${team}${player_position}${player_name}: 
-----------------
-${team} ${player_position} ${player_name} was forced
-${team} ${player_position} ${player_name} ( shoulder ) is active
-${team} ${player_position} ${player_name} is expected to start
-${team} ${player_position} ${player_name} suffered a torn patella tendon
-${team} ${player_position} ${player_name} was held catch - less
 
 ${team}${team_score}${opp_score}: 
 ----------------
@@ -1203,11 +1206,20 @@ in the ${team}' ${team_score}-${opp_score} win
 ${team}${player_position}${player_name}${rush_attempts}: 
 ----------------
 ${team} ${player_position} ${player_name} rushed ${rush_attempts} times
+${team} rookie ${player_position} ${player_name} rushed ${rush_attempts} times
 ${team} fourth - round ${player_position} ${player_name} rushed ${rush_attempts} times
+
+${rec_yards}${rec_td}${rush_attempts}: 
+----------------
+for ${rec_yards} yards and ${rec_td} touchdowns while rushing ${rush_attempts} time
 
 ${player_name}${rush_yards}${rush_td}: 
 ----------------
 ${player_name} collected ${rush_yards} yards and ${rush_td} touchdowns
+
+${pass_completions}: 
+----------------
+for 117 yards and completed ${pass_completions}
 
 ${pass_td}${rush_yards}: 
 ----------------
@@ -1217,6 +1229,10 @@ for ${pass_td} touchdowns while adding ${rush_yards} rushing yards
 ${team}${pass_int}: 
 ----------------
 to NFL Network's Ian Rapoport , ${team} coach Dirk Koetter was " ${pass_int} or 2 plays away "
+
+${opp}${pass_completions}: 
+----------------
+to ${opp} and completed ${pass_completions}
 
 ${rec_targets}${week}: 
 ----------------
@@ -1276,14 +1292,17 @@ ${team}${rush_td}:
 ----------------
 ${team} only have ${rush_td} running backs active
 
-${rush_yards}${rec_yards}: 
+${player_name}${opp_score}: 
 ----------------
-for ${rush_yards} yards and caught a ${rec_yards} yard touchdown
-for ${rush_yards} yards and a touchdown and caught a ${rec_yards} yard pass
+${player_name} completed ${opp_score}
 
 ${player_name}${team}${game_dow}: 
 ----------------
 NJ Advance Media's Zack Rosenblatt expects ${player_name} to lead the ${team}' backfield ${game_dow} night
+
+${rec_yards}${receptions}: 
+----------------
+for ${rec_yards} yards and caught ${receptions}
 
 ${team}${player_position}${player_name}${game_dow}${week}: 
 ----------------
@@ -1293,11 +1312,16 @@ ${team} ${player_position} ${player_name} left ${game_dow}'s week ${week} game
 ${week}${opp}: 
 ----------------
 in Seattle's week ${week} London win over ${opp}.
+in the Packers' week ${week} win over ${opp}.
 in the Colts' week ${week} win over ${opp}.
 
 ${rush_attempts}${rec_yards}: 
 ----------------
 on ${rush_attempts} carries while gaining ${rec_yards} yards
+
+${pass_int}${game_dow}: 
+----------------
+with no touchdowns , ${pass_int} interceptions and 1 lost fumble ${game_dow}
 
 ${team}${player_position}: 
 ----------------
@@ -1311,6 +1335,7 @@ over the ${opp} , ${team_score}-${opp_score}.
 ${game_dow}${receptions}: 
 ----------------
 in ${game_dow}'s week ${receptions} game
+on his lone carry ${game_dow} while adding ${receptions} catches
 
 ${opp}${pass_yards}: 
 ----------------
@@ -1324,13 +1349,25 @@ ${game_dow}${week}${opp}:
 ----------------
 in ${game_dow} night's week ${week} win over ${opp}.
 
+${rush_yards}${rush_attempts}: 
+----------------
+for ${rush_yards} yards on just ${rush_attempts} carries
+
 ${player_name}${team}: 
 ----------------
 ${player_name} will be the ${team}' starting running back
 
+${receptions}${receptions}: 
+----------------
+of ${receptions} yards and caught ${receptions}
+
 ${opp}${rush_yards}${pass_td}: 
 ----------------
 over the ${opp} , adding ${rush_yards} yards and ${pass_td} additional touchdowns
+
+${team}${team_score}: 
+----------------
+with the ${team} winning ${team_score}-14
 
 ${rec_yards}${rec_td}${rush_yards}: 
 ----------------
@@ -1340,14 +1377,34 @@ ${rush_attempts}${rec_targets}:
 ----------------
 on ${rush_attempts} carries while turning ${rec_targets} targets
 
+${player_position}${player_name}: 
+----------------
+${player_position} ${player_name} hauled
+
 ${team}${player_position}${player_name}${pass_completions}: 
 ----------------
 ${team} ${player_position} ${player_name} completed ${pass_completions}
 
-${rush_attempts}${week}: 
-----------------
-on ${rush_attempts} carries while snaring ${week}
-
 ${player_name}${game_dow}${week}${opp}: 
 ----------------
 ${player_name} needed X - rays following ${game_dow}'s week ${week} win over ${opp}.
+
+${team}${week}${rush_attempts}: 
+----------------
+in the ${team}' week ${week} loss , adding a ${rush_attempts} yard rush
+
+${rec_td}${receptions}: 
+----------------
+with ${rec_td} touchdown while catching all ${receptions}
+
+${pass_yards}${week}: 
+----------------
+for ${pass_yards} yards and a touchdown and rushed ${week} times
+
+${game_dow}${rush_yards}: 
+----------------
+on ${game_dow} night , adding ${rush_yards} yards and a third touchdown
+
+${team}${opp_score}${team_score}: 
+----------------
+in the ${team}' ${opp_score}-${team_score} Thanksgiving loss

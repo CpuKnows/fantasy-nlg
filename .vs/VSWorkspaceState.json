@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\analysis",
+    "\\analysis\\data",
     "\\analysis\\src",
+    "\\analysis\\src\\msApriori",
+    "\\analysis\\src\\notebooks",
+    "\\docs",
+    "\\football_db_spider",
     "\\nlp",
-    "\\rotoworld_spider",
-    "\\rotoworld_spider\\scraped_data"
+    "\\rotoworld_spider"
   ],
-  "SelectedNode": "\\nlp\\test.py",
+  "SelectedNode": "\\analysis\\src\\msApriori\\msApriori.py",
   "PreviewInSolutionExplorer": false
 }
