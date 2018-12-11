@@ -20,7 +20,12 @@ def get_teams(teams_file):
         for v_i in v:
             team_id_dict[v_i] = k
 
-    return teams, id_team_dict, team_id_dict
+    team_abbr_dict = dict()
+    for k, v in teams_dict.items():
+        for v_i in v:
+            team_abbr_dict[v_i] = k
+
+    return teams_dict, teams, id_team_dict, team_id_dict, team_abbr_dict
 
 
 def get_players(news_file):

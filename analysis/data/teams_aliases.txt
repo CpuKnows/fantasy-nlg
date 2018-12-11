@@ -19,7 +19,7 @@
 'WAS': ['Washington Redskins', 'Washington', 'Redskins', 'WAS'],
 'LAR': ['Los Angeles Rams', 'Los Angeles', 'Rams', 'LAR'],
 'SEA': ['Seattle Seahawks', 'Seattle', 'Seahawks', 'SEA', 'Hawks'],
-'SF': ['San Francisco 49ers', 'San Francisco', '49ers', 'SF'],
+'SF': ['San Francisco 49ers', 'San Francisco', '49ers', 'SF', 'Niners'],
 'DEN': ['Denver Broncos', 'Denver', 'Broncos', 'DEN'],
 'PIT': ['Pittsburgh Steelers', 'Pittsburgh', 'Steelers', 'PIT'],
 'ARZ': ['Arizona Cardinals', 'Arizona', 'Cardinals', 'ARZ', 'ARI', 'Cards'],
