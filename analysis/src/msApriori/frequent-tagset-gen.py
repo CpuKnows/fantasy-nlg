@@ -46,7 +46,7 @@ for i in range(len(df)):
     bucket.append(currentBucket)
 
 def openResultFile():
-    result_file = "result.txt";
+    result_file = "result.txt"
 
     try:
         os.remove(result_file)
@@ -84,7 +84,7 @@ def printTagChunks(tagChunksDict, file):
         for val in tagChunksDict[key]:
             file.write(val + "\n")
 
-minsup = 0.05
+minsup = 0.3
 Fks, item_counts = MSapriori(bucket, minsup)
 
 file = openResultFile()
@@ -95,5 +95,35 @@ printFrequentkItemsets(Fks, item_counts, file)
 printTagChunks(tagChunksDict, file)
 file.close()
 
+#---------------------------
+def generateChunkCombinations(Fks, k, tagChunksDict):
+    # Verify if fks have k-frequent sets
+    k_fk = None
+    
+    for j, Fk in enumerate(Fks):
+        if len(Fk) == 0: continue
+        if k == len(Fk[0]):
+            k_fk = Fk
+            break
 
+    if k_fk == None:
+        raise("k-frequent set not found in Fks.")
 
+    sentences = []
+    for fk in k_fk:
+        currentSentences = []
+        combineChunks(fk, tagChunksDict, 0, '', currentSentences)
+        sentences.append(currentSentences)
+    return sentences
+
+def combineChunks(fk, chunksDict, chunkIndex, predecessor, sentences):
+    if chunkIndex == len(fk):
+        sentences.append(predecessor)
+        return
+
+    for chunk in chunksDict[fk[chunkIndex]][:5]:
+        currentSentence = predecessor + " " + chunk
+        combineChunks(fk, chunksDict, chunkIndex + 1, currentSentence, sentences)
+
+from pprint import pprint
+#pprint(generateChunkCombinations(Fks, 4, tagChunksDict))
