@@ -1,11 +1,12 @@
+from collections import namedtuple
 import pickle
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-from .data_utils import create_news_stats_dataset
-from .spacy_utils import load_spacy_model
-from .generate_templates import GenerateTemplates
+from fantasy_nlg.data_utils import create_news_stats_dataset
+from fantasy_nlg.spacy_utils import load_spacy_model
+from fantasy_nlg.generate_templates import GenerateTemplates
 
 
 if __name__ == '__main__':
@@ -41,8 +42,10 @@ if __name__ == '__main__':
         true_tags.append(sample[-1])
 
     # Text vectorizers
-    ngram_vectorizer = CountVectorizer(lowercase=False, tokenizer=lambda d: d, analyzer=lambda d: d)
-    tag_vectorizer = CountVectorizer(lowercase=False, tokenizer=lambda d: d, analyzer=lambda d: d)
+    def noop(d):
+        return d
+    ngram_vectorizer = CountVectorizer(lowercase=False, tokenizer=noop, analyzer=noop)
+    tag_vectorizer = CountVectorizer(lowercase=False, tokenizer=noop, analyzer=noop)
 
     X_ngrams = ngram_vectorizer.fit_transform(context_ngrams)
     X_tags = tag_vectorizer.fit_transform(context_tags)
@@ -61,8 +64,10 @@ if __name__ == '__main__':
     print('Context tags naive bayes accuracy:', np.sum(predictions == y_tags) / len(y_tags))
 
     template_generator.create_prediction_func(ngram_vectorizer, ngram_clf)
-    template_generator.template_transformer(news_stats_df, '../data/output_templates.csv')
+    _ = template_generator.template_transformer(news_stats_df, '../data/output_templates.csv')
 
     print('Pickling model')
-    with open('../models/template_generator_ngram_naive_bayes', 'wb') as f:
-        pickle.dump((ngram_vectorizer, ngram_clf), f)
+    TemplateModel = namedtuple('TemplateModel', ['vectorizer', 'classifier'])
+    # Need to copy noop() function from vectorizer when unpickling (see vectorizer args: tokenizer, analyzer)
+    with open('../models/ngram_nb.pkl', 'wb') as f:
+        pickle.dump(TemplateModel(ngram_vectorizer, ngram_clf), f)
