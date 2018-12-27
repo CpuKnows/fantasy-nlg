@@ -19,6 +19,7 @@ Several approaches to template generation were explored including:
 - Combinatorics
 - Recurrent Neural Networks
 - Logistic Regression
+- Naive Bayes
 
 ## Execution
 
