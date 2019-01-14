@@ -380,14 +380,20 @@ class GenerateTemplates:
             news_reports.append(news_dict['report'])
             output_templates.append(news_template.template)
 
-        if output_file is not None:
-            output_df = pd.DataFrame({'report': news_reports, 'templates': output_templates,
-                                      'report_chunks': chunks_list, 'template_chunks': template_chunks_list})
-            output_df.to_csv(output_file, index=False)
-            print('Output templates to ({})'.format(output_file))
         if chunking:
+            if output_file is not None:
+                output_df = pd.DataFrame({'report': news_reports, 'templates': output_templates,
+                                          'report_chunks': chunks_list, 'template_chunks': template_chunks_list})
+                output_df.to_csv(output_file, index=False)
+                print('Output templates to ({})'.format(output_file))
+
             return output_templates, chunk_training_dict
         else:
+            if output_file is not None:
+                output_df = pd.DataFrame({'report': news_reports, 'templates': output_templates})
+                output_df.to_csv(output_file, index=False)
+                print('Output templates to ({})'.format(output_file))
+
             return output_templates
 
     def create_chunk_features(self, chunks, news_dict):
@@ -405,6 +411,48 @@ class GenerateTemplates:
             if chunk.label_ != 'player':
                 features = field_features(self.data_type_to_col[chunk.label_], news_dict, self.data_cols)
                 yield features, self.doc_to_template(chunk).template, chunk.label_
+
+    def remove_infrequent_chunks(self, chunk_dict, lower_limit=3):
+        """
+        Removes chunks that appear less than lower_limit times.
+
+        :param chunk_dict: Dictionary of template chunks
+        :param lower_limit: Lower limit of chunk count
+        :return: Dictionary of filtered template chunks
+        """
+
+        filtered_chunk_dict = dict()
+        for k, v in chunk_dict.items():
+            if k in ['passing', 'rushing', 'receptions']:
+                large_counts = Counter(v['y'])
+                large_counts = [temp for temp, cnt in large_counts.items() if cnt >= lower_limit]
+                large_filter = [(y in large_counts) for y in v['y']]
+                y_temp = np.row_stack(v['y'])[large_filter]
+                X_temp = np.row_stack(v['X'])[large_filter]
+                filtered_chunk_dict[k] = {'X': X_temp, 'y': y_temp}
+            elif k == 'game':
+                large_counts = Counter(v['y'])
+                large_counts = [temp for temp, cnt in large_counts.items() if cnt >= lower_limit]
+
+                # Sometimes teams aren't correctly tagged. Don't include game chunks with an untagged team name
+                large_filter = []
+                for y in v['y']:
+                    team_present = False
+                    for team in self.teams:
+                        if team in y:
+                            team_present = True
+                            break
+                    large_filter.append(y in large_counts and not team_present)
+
+                y_temp = np.row_stack(v['y'])[large_filter]
+                X_temp = np.row_stack(v['X'])[large_filter]
+                filtered_chunk_dict[k] = {'X': X_temp, 'y': y_temp}
+            else:
+                filtered_chunk_dict[k] = {'X': np.row_stack(v['X']), 'y': np.row_stack(v['y'])}
+
+        for k, v in filtered_chunk_dict.items():
+            print(k, v['X'].shape, v['y'].shape)
+        return filtered_chunk_dict
 
 
 def record_features(prev_labels, news_dict, record_types, data_cols):

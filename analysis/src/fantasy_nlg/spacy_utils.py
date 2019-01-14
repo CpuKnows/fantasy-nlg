@@ -79,7 +79,8 @@ def load_spacy_model(team_file, players_file):
     nlp = spacy.load('en')
 
     # Teams
-    teams, _, _ = get_teams(team_file)
+    teams = get_teams(team_file)
+    teams = teams[0]
 
     # Players
     player_list = get_players(players_file)
