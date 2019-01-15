@@ -22,14 +22,15 @@ Several approaches to template generation were explored including:
 - Naive Bayes
 
 ## Execution
-### Script location: .analysis/src
+### Script location: ./analysis/src
 - template_generation_script.py
 - news_nlg_script.py
 
-1. Execute template_generation_script.py to generate training data (templates). It
-- Generates training data
+1. Execute template_generation_script.py. This script:
+- Generates templates
 - Chunks templates
-- Trains the model
+- Extracts and generates facts dataset
+- Trains model
 - Pickles model
 
 Sample execution:
@@ -53,7 +54,7 @@ Pickling template chunk type model
 ```
 
 2. Execute news_nlg_script.py 
-- Generates news articles.
+- Uses trained model to generate news articles.
 - Default file: /data/text_output.csv'
 - Sample output:
 
