@@ -22,7 +22,46 @@ Several approaches to template generation were explored including:
 - Naive Bayes
 
 ## Execution
+### Script location: .analysis/src
+- template_generation_script.py
+- news_nlg_script.py
 
+1. Execute template_generation_script.py to generate training data (templates). It
+- Generates training data
+- Chunks templates
+- Trains the model
+- Pickles model
 
-## View presentation
+Sample execution:
+
+```
+Processing documents to create training data
+Output intermediate templates to (../data/intermediate_templates.csv)
+Vectorized data shapes: (13511, 703) (13511, 21) (13511,)
+Context n-gram naive bayes accuracy: 0.9818666271926578
+Context tags naive bayes accuracy: 0.7793649618829103
+Output templates to (../data/output_templates.csv)
+Pickling template tag disambiguation model
+Training chunk type selection
+record (8920, 48) (8920, 1)
+passing (305, 60) (305, 1)
+receptions (1185, 60) (1185, 1)
+rushing (518, 60) (518, 1)
+game (1731, 60) (1731, 1)
+Chunk type accuracy: 0.9345405724508477
+Pickling template chunk type model
+```
+
+2. Execute news_nlg_script.py 
+- Generates news articles.
+- Default file: /data/text_output.csv'
+- Sample output:
+
+#### Artificial News Article using NLG:
+Tavon Austin caught two passes for 79 yards and a touchdown in Week 2 against the Giants.
+
+## View project presentation
 https://bit.ly/2Eq9VuP
+
+## Paper
+docs/Maxwell-Singh - fantasy nlg.pdf
